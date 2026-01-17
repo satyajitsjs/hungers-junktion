@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Hunger's Junktion - Get in touch for reservations, catering, feedback, or partnerships. Multiple contact channels including phone, email, WhatsApp, and live chat.">
+    <title>Contact Us - Hunger's Junktion</title>
+    <link rel="stylesheet" href="../css/main.css">
+  
+  <script type="module" async src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fhungersju6056back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.12"></script>
+  <script type="module" defer src="https://static.rocket.new/rocket-shot.js?v=0.0.2"></script>
+  </head>
+<body class="bg-background text-text-primary overflow-x-hidden">
+    
+    <!-- Navigation Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-premium border-b border-primary-800">
+        <nav class="container mx-auto px-4 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo -->
+                <a href="homepage.html" class="flex items-center gap-3 hover-lift">
+                    <!-- <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M24 4L8 12V22C8 32 16 40 24 44C32 40 40 32 40 22V12L24 4Z" fill="#FF4500"/>
+                        <path d="M24 14C19.5817 14 16 17.5817 16 22C16 26.4183 19.5817 30 24 30C28.4183 30 32 26.4183 32 22C32 17.5817 28.4183 14 24 14Z" fill="#1A1A1A"/>
+                        <circle cx="24" cy="22" r="3" fill="#FF4500"/>
+                    </svg> -->
+                    <img src="https://hungers-junktion.alphazero.in/assets/logo.png" alt="">
+
+                    <div class="flex flex-col">
+                        <span class="font-headline text-xl font-bold text-gradient-accent">HUNGER'S</span>
+                        <span class="font-cta text-xs tracking-wider text-text-secondary">JUNKTION</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden lg:flex items-center gap-8">
+                    <a href="homepage.html" class="font-body text-sm font-medium text-text-primary hover:text-accent transition-colors">Home</a>
+                    <a href="complete_menu.html" class="font-body text-sm font-medium text-text-primary hover:text-accent transition-colors">Menu</a>
+                    <a href="featured_items.html" class="font-body text-sm font-medium text-text-primary hover:text-accent transition-colors">Featured</a>
+                    <a href="order_online.html" class="font-body text-sm font-medium text-text-primary hover:text-accent transition-colors">Order Online</a>
+                    <a href="locations.html" class="font-body text-sm font-medium text-text-primary hover:text-accent transition-colors">Locations</a>
+                    <a href="contact.html" class="font-body text-sm font-medium text-accent hover:text-accent-400 transition-colors">Contact</a>
+                </div>
+
+                <!-- CTA Button -->
+                <div class="hidden lg:flex items-center gap-4">
+                    <a href="order_online.html" class="btn-primary hover-glow">
+                        Order Now
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobileMenuBtn" class="lg:hidden p-2 text-text-primary hover:text-accent transition-colors" aria-label="Toggle mobile menu">
+                    <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobileMenu" class="hidden lg:hidden pb-6">
+                <div class="flex flex-col gap-4">
+                    <a href="homepage.html" class="font-body text-sm font-medium text-text-primary hover:text-accent py-2 transition-colors">Home</a>
+                    <a href="complete_menu.html" class="font-body text-sm font-medium text-text-primary hover:text-accent py-2 transition-colors">Menu</a>
+                    <a href="featured_items.html" class="font-body text-sm font-medium text-text-primary hover:text-accent py-2 transition-colors">Featured</a>
+                    <a href="order_online.html" class="font-body text-sm font-medium text-text-primary hover:text-accent py-2 transition-colors">Order Online</a>
+                    <a href="locations.html" class="font-body text-sm font-medium text-text-primary hover:text-accent py-2 transition-colors">Locations</a>
+                    <a href="contact.html" class="font-body text-sm font-medium text-accent py-2">Contact</a>
+                    <a href="order_online.html" class="btn-primary w-full text-center mt-4">Order Now</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-[60vh] flex items-center justify-center overflow-hidden pt-20 bg-gradient-to-br from-background via-background-light to-background">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 opacity-5">
+            <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <pattern id="contactGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+                        <path d="M 40 0 L 0 0 0 40" fill="none" stroke="currentColor" stroke-width="1"/>
+                    </pattern>
+                </defs>
+                <rect width="100%" height="100%" fill="url(#contactGrid)" />
+            </svg>
+        </div>
+
+        <div class="container mx-auto px-4 lg:px-8 relative z-10 text-center">
+            <div class="max-w-3xl mx-auto space-y-6 animate-reveal">
+                <span class="font-cta text-accent text-sm tracking-wider uppercase">Get In Touch</span>
+                <h1 class="font-headline text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
+                    <span class="text-gradient-accent">We're Here</span>
+                    <br>
+                    <span class="text-text-primary">To Help You</span>
+                </h1>
+                <p class="font-body text-lg md:text-xl text-text-secondary max-w-2xl mx-auto">
+                    Whether you're planning a reservation, need catering services, or just want to share feedback, we're ready to assist you.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Contact Cards -->
+    <section class="py-12 lg:py-16 bg-background-light relative">
+        <div class="container mx-auto px-4 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
+                <!-- Phone Contact -->
+                <a href="tel:+919876543210" class="card-dramatic p-6 hover-lift hover-glow group">
+                    <div class="w-14 h-14 rounded-xl bg-accent-900/30 flex items-center justify-center mb-4 group-hover:bg-accent-900/50 transition-colors">
+                        <svg width="28" height="28" fill="none" stroke="#FF4500" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-headline text-xl font-bold mb-2">Call Us</h3>
+                    <p class="font-body text-text-secondary text-sm mb-3">Speak with our team</p>
+                    <p class="font-cta text-accent">+91 98765 43210</p>
+                </a>
+
+                <!-- WhatsApp Contact -->
+                <a href="https://wa.me/919876543210" target="_blank" rel="noopener noreferrer" class="card-dramatic p-6 hover-lift hover-glow group">
+                    <div class="w-14 h-14 rounded-xl bg-success-900/30 flex items-center justify-center mb-4 group-hover:bg-success-900/50 transition-colors">
+                        <svg width="28" height="28" fill="#22C55E" viewBox="0 0 24 24">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-headline text-xl font-bold mb-2">WhatsApp</h3>
+                    <p class="font-body text-text-secondary text-sm mb-3">Quick messaging</p>
+                    <p class="font-cta text-success-400">Chat Now</p>
+                </a>
+
+                <!-- Email Contact -->
+                <a href="mailto:hello@hungersjunktion.com" class="card-dramatic p-6 hover-lift hover-glow group">
+                    <div class="w-14 h-14 rounded-xl bg-warning-900/30 flex items-center justify-center mb-4 group-hover:bg-warning-900/50 transition-colors">
+                        <svg width="28" height="28" fill="none" stroke="#F59E0B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                    </div>
+                    <h3 class="font-headline text-xl font-bold mb-2">Email Us</h3>
+                    <p class="font-body text-text-secondary text-sm mb-3">Send us a message</p>
+                    <p class="font-cta text-warning-400 text-sm break-all">hello@hungersjunktion.com</p>
+                </a>
+
+                <!-- Live Chat -->
+                <button id="liveChatBtn" class="card-dramatic p-6 hover-lift hover-glow group text-left">
+                    <div class="w-14 h-14 rounded-xl bg-primary-700/50 flex items-center justify-center mb-4 group-hover:bg-primary-700 transition-colors">
+                        <svg width="28" height="28" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-headline text-xl font-bold mb-2">Live Chat</h3>
+                    <p class="font-body text-text-secondary text-sm mb-3">Instant support</p>
+                    <p class="font-cta text-text-primary">Start Chat</p>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form & Info Section -->
+    <section class="py-20 lg:py-32 bg-background relative">
+        <div class="container mx-auto px-4 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 max-w-7xl mx-auto">
+                <!-- Contact Form -->
+                <div class="space-y-8">
+                    <div>
+                        <span class="font-cta text-accent text-sm tracking-wider uppercase">Send Us A Message</span>
+                        <h2 class="font-headline text-4xl md:text-5xl font-bold mt-4 mb-6">
+                            Get In <span class="text-gradient-accent">Touch</span>
+                        </h2>
+                        <p class="font-body text-text-secondary text-lg">
+                            Fill out the form below and we'll get back to you as soon as possible.
+                        </p>
+                    </div>
+
+                    <form id="contactForm" class="space-y-6">
+                        <!-- Inquiry Type -->
+                        <div>
+                            <label for="inquiryType" class="block font-body text-sm font-medium mb-2">Inquiry Type *</label>
+                            <select id="inquiryType" name="inquiryType" required class="input-base w-full">
+                                <option value="">Select inquiry type</option>
+                                <option value="reservation">Table Reservation</option>
+                                <option value="catering">Catering Services</option>
+                                <option value="feedback">Feedback & Suggestions</option>
+                                <option value="partnership">Business Partnership</option>
+                                <option value="general">General Inquiry</option>
+                            </select>
+                        </div>
+
+                        <!-- Name -->
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="firstName" class="block font-body text-sm font-medium mb-2">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" required class="input-base w-full" placeholder="Rahul">
+                            </div>
+                            <div>
+                                <label for="lastName" class="block font-body text-sm font-medium mb-2">Last Name *</label>
+                                <input type="text" id="lastName" name="lastName" required class="input-base w-full" placeholder="Sharma">
+                            </div>
+                        </div>
+
+                        <!-- Contact Info -->
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="email" class="block font-body text-sm font-medium mb-2">Email Address *</label>
+                                <input type="email" id="email" name="email" required class="input-base w-full" placeholder="rahul@example.com">
+                            </div>
+                            <div>
+                                <label for="phone" class="block font-body text-sm font-medium mb-2">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" required class="input-base w-full" placeholder="+91 98765 43210">
+                            </div>
+                        </div>
+
+                        <!-- Reservation Details (conditional) -->
+                        <div id="reservationFields" class="hidden space-y-6">
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div>
+                                    <label for="reservationDate" class="block font-body text-sm font-medium mb-2">Preferred Date</label>
+                                    <input type="date" id="reservationDate" name="reservationDate" class="input-base w-full" min="2026-01-17">
+                                </div>
+                                <div>
+                                    <label for="reservationTime" class="block font-body text-sm font-medium mb-2">Preferred Time</label>
+                                    <select id="reservationTime" name="reservationTime" class="input-base w-full">
+                                        <option value="">Select time</option>
+                                        <option value="12:00">12:00 PM</option>
+                                        <option value="12:30">12:30 PM</option>
+                                        <option value="13:00">1:00 PM</option>
+                                        <option value="13:30">1:30 PM</option>
+                                        <option value="14:00">2:00 PM</option>
+                                        <option value="19:00">7:00 PM</option>
+                                        <option value="19:30">7:30 PM</option>
+                                        <option value="20:00">8:00 PM</option>
+                                        <option value="20:30">8:30 PM</option>
+                                        <option value="21:00">9:00 PM</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div>
+                                <label for="partySize" class="block font-body text-sm font-medium mb-2">Party Size</label>
+                                <select id="partySize" name="partySize" class="input-base w-full">
+                                    <option value="">Select party size</option>
+                                    <option value="1">1 Person</option>
+                                    <option value="2">2 People</option>
+                                    <option value="3">3 People</option>
+                                    <option value="4">4 People</option>
+                                    <option value="5">5 People</option>
+                                    <option value="6">6 People</option>
+                                    <option value="7+">7+ People</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Message -->
+                        <div>
+                            <label for="message" class="block font-body text-sm font-medium mb-2">Message *</label>
+                            <textarea id="message" name="message" rows="5" required class="input-base w-full resize-none" placeholder="Tell us more about your inquiry..."></textarea>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <button type="submit" class="btn-primary w-full hover-glow">
+                            <span class="flex items-center justify-center gap-2">
+                                Send Message
+                                <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                                </svg>
+                            </span>
+                        </button>
+
+                        <!-- Success Message -->
+                        <div id="successMessage" class="hidden bg-success-900/30 border border-success-700/30 rounded-lg p-4">
+                            <div class="flex items-start gap-3">
+                                <svg width="24" height="24" fill="none" stroke="#22C55E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="flex-shrink-0">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                                </svg>
+                                <div>
+                                    <h4 class="font-headline text-sm font-bold text-success-400 mb-1">Message Sent Successfully!</h4>
+                                    <p class="font-body text-xs text-text-secondary">We'll get back to you within 24 hours.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Contact Information & Map -->
+                <div class="space-y-8">
+                    <!-- Contact Details -->
+                    <div class="card-dramatic p-8 space-y-6">
+                        <h3 class="font-headline text-2xl font-bold">Contact Information</h3>
+                        
+                        <div class="space-y-4">
+                            <!-- Address -->
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 rounded-lg bg-accent-900/30 flex items-center justify-center flex-shrink-0">
+                                    <svg width="24" height="24" fill="none" stroke="#FF4500" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                        <circle cx="12" cy="10" r="3"></circle>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-headline text-sm font-bold mb-1">Main Location</h4>
+                                    <p class="font-body text-sm text-text-secondary">123 Food Street, Bandra West<br>Mumbai, Maharashtra 400050</p>
+                                </div>
+                            </div>
+
+                            <!-- Phone -->
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 rounded-lg bg-accent-900/30 flex items-center justify-center flex-shrink-0">
+                                    <svg width="24" height="24" fill="none" stroke="#FF4500" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-headline text-sm font-bold mb-1">Phone Numbers</h4>
+                                    <p class="font-body text-sm text-text-secondary">Main: +91 98765 43210<br>Catering: +91 98765 43211</p>
+                                </div>
+                            </div>
+
+                            <!-- Email -->
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 rounded-lg bg-accent-900/30 flex items-center justify-center flex-shrink-0">
+                                    <svg width="24" height="24" fill="none" stroke="#FF4500" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                        <polyline points="22,6 12,13 2,6"></polyline>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-headline text-sm font-bold mb-1">Email Addresses</h4>
+                                    <p class="font-body text-sm text-text-secondary">General: hello@hungersjunktion.com<br>Catering: catering@hungersjunktion.com</p>
+                                </div>
+                            </div>
+
+                            <!-- Hours -->
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 rounded-lg bg-accent-900/30 flex items-center justify-center flex-shrink-0">
+                                    <svg width="24" height="24" fill="none" stroke="#FF4500" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <polyline points="12 6 12 12 16 14"></polyline>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-headline text-sm font-bold mb-1">Business Hours</h4>
+                                    <p class="font-body text-sm text-text-secondary">Mon-Sun: 11:00 AM - 11:00 PM<br>Kitchen closes at 10:30 PM</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Social Media -->
+                        <div class="pt-6 border-t border-primary-800">
+                            <h4 class="font-headline text-sm font-bold mb-4">Follow Us</h4>
+                            <div class="flex items-center gap-3">
+                                <a href="javascript:void(0)" class="w-10 h-10 rounded-lg bg-surface flex items-center justify-center hover:bg-accent transition-colors" aria-label="Facebook">
+                                    <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                                    </svg>
+                                </a>
+                                <a href="javascript:void(0)" class="w-10 h-10 rounded-lg bg-surface flex items-center justify-center hover:bg-accent transition-colors" aria-label="Instagram">
+                                    <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                                    </svg>
+                                </a>
+                                <a href="javascript:void(0)" class="w-10 h-10 rounded-lg bg-surface flex items-center justify-center hover:bg-accent transition-colors" aria-label="Twitter">
+                                    <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                                    </svg>
+                                </a>
+                                <a href="javascript:void(0)" class="w-10 h-10 rounded-lg bg-surface flex items-center justify-center hover:bg-accent transition-colors" aria-label="YouTube">
+                                    <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Map Placeholder -->
+                    <div class="card-dramatic overflow-hidden">
+                        <div class="aspect-video bg-surface relative">
+                            <img src="https://img.rocket.new/generatedImages/rocket_gen_img_198357903-1768635753776.png" 
+                                 alt="Map showing Hunger's Junktion location at 123 Food Street, Bandra West, Mumbai" 
+                                 class="w-full h-full object-cover"
+                                 loading="lazy"
+                                 onerror="this.src='https://images.pexels.com/photos/1252500/pexels-photo-1252500.jpeg?auto=compress&cs=tinysrgb&w=1200'; this.onerror=null;">
+                            <div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
+                            <div class="absolute bottom-4 left-4 right-4">
+                                <a href="locations.html" class="btn-primary w-full text-center">
+                                    View All Locations
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-20 lg:py-32 bg-background-light relative">
+        <div class="container mx-auto px-4 lg:px-8">
+            <div class="max-w-4xl mx-auto">
+                <!-- Section Header -->
+                <div class="text-center mb-16">
+                    <span class="font-cta text-accent text-sm tracking-wider uppercase">Common Questions</span>
+                    <h2 class="font-headline text-4xl md:text-5xl font-bold mt-4 mb-6">
+                        Frequently Asked <span class="text-gradient-accent">Questions</span>
+                    </h2>
+                    <p class="font-body text-text-secondary text-lg">
+                        Quick answers to questions you may have
+                    </p>
+                </div>
+
+                <!-- FAQ Accordion -->
+                <div class="space-y-4">
+                    <!-- FAQ Item 1 -->
+                    <div class="card-dramatic overflow-hidden">
+                        <button class="faq-trigger w-full text-left p-6 flex items-center justify-between gap-4" data-faq="1">
+                            <span class="font-headline text-lg font-bold">How do I make a table reservation?</span>
+                            <svg class="faq-icon w-6 h-6 flex-shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </button>
+                        <div class="faq-content hidden px-6 pb-6">
+                            <p class="font-body text-text-secondary leading-relaxed">
+                                You can make a reservation by filling out the contact form above and selecting "Table Reservation" as your inquiry type. Alternatively, call us directly at +91 98765 43210 or message us on WhatsApp. We recommend booking at least 24 hours in advance, especially for weekend dining.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 2 -->
+                    <div class="card-dramatic overflow-hidden">
+                        <button class="faq-trigger w-full text-left p-6 flex items-center justify-between gap-4" data-faq="2">
+                            <span class="font-headline text-lg font-bold">Do you offer catering services?</span>
+                            <svg class="faq-icon w-6 h-6 flex-shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </button>
+                        <div class="faq-content hidden px-6 pb-6">
+                            <p class="font-body text-text-secondary leading-relaxed">
+                                Yes! We provide comprehensive catering services for corporate events, parties, and special occasions. Our catering menu includes customizable options for both vegetarian and non-vegetarian preferences. Contact us at catering@hungersjunktion.com or call +91 98765 43211 for detailed packages and pricing.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 3 -->
+                    <div class="card-dramatic overflow-hidden">
+                        <button class="faq-trigger w-full text-left p-6 flex items-center justify-between gap-4" data-faq="3">
+                            <span class="font-headline text-lg font-bold">What are your delivery options?</span>
+                            <svg class="faq-icon w-6 h-6 flex-shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </button>
+                        <div class="faq-content hidden px-6 pb-6">
+                            <p class="font-body text-text-secondary leading-relaxed">
+                                We partner with Swiggy and Zomato for convenient delivery to your doorstep. You can also order directly through our website for pickup. Delivery typically takes 30-45 minutes depending on your location. We ensure all food is packaged securely to maintain freshness and temperature.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 4 -->
+                    <div class="card-dramatic overflow-hidden">
+                        <button class="faq-trigger w-full text-left p-6 flex items-center justify-between gap-4" data-faq="4">
+                            <span class="font-headline text-lg font-bold">Do you accommodate dietary restrictions?</span>
+                            <svg class="faq-icon w-6 h-6 flex-shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </button>
+                        <div class="faq-content hidden px-6 pb-6">
+                            <p class="font-body text-text-secondary leading-relaxed">
+                                Absolutely! We clearly mark all vegetarian and non-vegetarian items on our menu. We can also accommodate specific dietary requirements such as gluten-free, dairy-free, or allergen-specific needs. Please inform us of any dietary restrictions when placing your order, and our kitchen team will ensure your meal is prepared accordingly.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 5 -->
+                    <div class="card-dramatic overflow-hidden">
+                        <button class="faq-trigger w-full text-left p-6 flex items-center justify-between gap-4" data-faq="5">
+                            <span class="font-headline text-lg font-bold">How can I provide feedback or file a complaint?</span>
+                            <svg class="faq-icon w-6 h-6 flex-shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </button>
+                        <div class="faq-content hidden px-6 pb-6">
+                            <p class="font-body text-text-secondary leading-relaxed">
+                                We value your feedback! You can share your experience by filling out the contact form and selecting "Feedback & Suggestions" as your inquiry type. You can also email us directly at hello@hungersjunktion.com or speak with our manager during your visit. We take all feedback seriously and strive to continuously improve our service.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 6 -->
+                    <div class="card-dramatic overflow-hidden">
+                        <button class="faq-trigger w-full text-left p-6 flex items-center justify-between gap-4" data-faq="6">
+                            <span class="font-headline text-lg font-bold">Are you hiring? How can I apply?</span>
+                            <svg class="faq-icon w-6 h-6 flex-shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </button>
+                        <div class="faq-content hidden px-6 pb-6">
+                            <p class="font-body text-text-secondary leading-relaxed">
+                                We're always looking for passionate team members! Current openings are posted on our social media channels. To apply, send your resume to careers@hungersjunktion.com with the position you're interested in as the subject line. We offer competitive compensation, growth opportunities, and a dynamic work environment.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Still Have Questions -->
+                <div class="text-center mt-12 pt-12 border-t border-primary-800">
+                    <p class="font-body text-text-secondary mb-4">Still have questions?</p>
+                    <a href="#contactForm" class="btn-secondary inline-flex items-center gap-2 hover-lift">
+                        Contact Us Directly
+                        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Signals Section -->
+    <section class="py-20 bg-background relative">
+        <div class="container mx-auto px-4 lg:px-8">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="font-headline text-3xl md:text-4xl font-bold mb-4">
+                        Trusted By <span class="text-gradient-accent">Thousands</span>
+                    </h2>
+                    <p class="font-body text-text-secondary">Quality and safety you can count on</p>
+                </div>
+
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                    <!-- Certification 1 -->
+                    <div class="card-dramatic p-6 text-center">
+                        <div class="w-16 h-16 rounded-full bg-success-900/30 flex items-center justify-center mx-auto mb-4">
+                            <svg width="32" height="32" fill="none" stroke="#22C55E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                            </svg>
+                        </div>
+                        <h3 class="font-headline text-sm font-bold mb-1">FSSAI Certified</h3>
+                        <p class="font-body text-xs text-text-secondary">Food Safety Standards</p>
+                    </div>
+
+                    <!-- Certification 2 -->
+                    <div class="card-dramatic p-6 text-center">
+                        <div class="w-16 h-16 rounded-full bg-warning-900/30 flex items-center justify-center mx-auto mb-4">
+                            <svg width="32" height="32" fill="none" stroke="#F59E0B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                        </div>
+                        <h3 class="font-headline text-sm font-bold mb-1">4.8/5 Rating</h3>
+                        <p class="font-body text-xs text-text-secondary">Customer Reviews</p>
+                    </div>
+
+                    <!-- Certification 3 -->
+                    <div class="card-dramatic p-6 text-center">
+                        <div class="w-16 h-16 rounded-full bg-accent-900/30 flex items-center justify-center mx-auto mb-4">
+                            <svg width="32" height="32" fill="none" stroke="#FF4500" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="font-headline text-sm font-bold mb-1">10K+ Customers</h3>
+                        <p class="font-body text-xs text-text-secondary">Happy Diners</p>
+                    </div>
+
+                    <!-- Certification 4 -->
+                    <div class="card-dramatic p-6 text-center">
+                        <div class="w-16 h-16 rounded-full bg-primary-700/50 flex items-center justify-center mx-auto mb-4">
+                            <svg width="32" height="32" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                        </div>
+                        <h3 class="font-headline text-sm font-bold mb-1">30 Min Delivery</h3>
+                        <p class="font-body text-xs text-text-secondary">Fast Service</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-background-dark border-t border-primary-800 py-12 lg:py-16">
+        <div class="container mx-auto px-4 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+                <!-- Brand Column -->
+                <div class="space-y-4">
+                    <a href="homepage.html" class="flex items-center gap-3">
+                        <svg width="40" height="40" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M24 4L8 12V22C8 32 16 40 24 44C32 40 40 32 40 22V12L24 4Z" fill="#FF4500"/>
+                            <path d="M24 14C19.5817 14 16 17.5817 16 22C16 26.4183 19.5817 30 24 30C28.4183 30 32 26.4183 32 22C32 17.5817 28.4183 14 24 14Z" fill="#1A1A1A"/>
+                            <circle cx="24" cy="22" r="3" fill="#FF4500"/>
+                        </svg>
+                        <div class="flex flex-col">
+                            <span class="font-headline text-lg font-bold text-gradient-accent">HUNGER'S</span>
+                            <span class="font-cta text-xs tracking-wider text-text-secondary">JUNKTION</span>
+                        </div>
+                    </a>
+                    <p class="font-body text-sm text-text-secondary leading-relaxed">
+                        Where hunger meets its match. Premium fast-food experience with bold flavors and quality ingredients.
+                    </p>
+                    <div class="flex items-center gap-4">
+                        <a href="javascript:void(0)" class="w-10 h-10 rounded-lg bg-surface flex items-center justify-center hover:bg-accent transition-colors" aria-label="Facebook">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="w-10 h-10 rounded-lg bg-surface flex items-center justify-center hover:bg-accent transition-colors" aria-label="Instagram">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="w-10 h-10 rounded-lg bg-surface flex items-center justify-center hover:bg-accent transition-colors" aria-label="Twitter">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="font-headline text-lg font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-3">
+                        <li><a href="homepage.html" class="font-body text-sm text-text-secondary hover:text-accent transition-colors">Home</a></li>
+                        <li><a href="complete_menu.html" class="font-body text-sm text-text-secondary hover:text-accent transition-colors">Menu</a></li>
+                        <li><a href="featured_items.html" class="font-body text-sm text-text-secondary hover:text-accent transition-colors">Featured Items</a></li>
+                        <li><a href="order_online.html" class="font-body text-sm text-text-secondary hover:text-accent transition-colors">Order Online</a></li>
+                    </ul>
+                </div>
+
+                <!-- Information -->
+                <div>
+                    <h3 class="font-headline text-lg font-bold mb-4">Information</h3>
+                    <ul class="space-y-3">
+                        <li><a href="contact.html" class="font-body text-sm text-text-secondary hover:text-accent transition-colors">About Us</a></li>
+                        <li><a href="locations.html" class="font-body text-sm text-text-secondary hover:text-accent transition-colors">Locations</a></li>
+                        <li><a href="contact.html" class="font-body text-sm text-accent">Contact</a></li>
+                        <li><a href="javascript:void(0)" class="font-body text-sm text-text-secondary hover:text-accent transition-colors">Careers</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="font-headline text-lg font-bold mb-4">Contact Us</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start gap-2">
+                            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="flex-shrink-0 mt-0.5">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                            <span class="font-body text-sm text-text-secondary">123 Food Street, Mumbai, India</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="flex-shrink-0">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                            </svg>
+                            <span class="font-body text-sm text-text-secondary">+91 98765 43210</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="flex-shrink-0">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                            <span class="font-body text-sm text-text-secondary">hello@hungersjunktion.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="pt-8 border-t border-primary-800">
+                <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+                    <p class="font-body text-sm text-text-secondary text-center md:text-left">
+                        © 2026 Hunger’s Junktion · Crafted by AlphaZero Software Solutions
+                    </p>
+                    <div class="flex items-center gap-6">
+                        <a href="javascript:void(0)" class="font-body text-sm text-text-secondary hover:text-accent transition-colors">Privacy Policy</a>
+                        <a href="javascript:void(0)" class="font-body text-sm text-text-secondary hover:text-accent transition-colors">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Live Chat Modal (Hidden by default) -->
+    <div id="liveChatModal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-background/80 backdrop-blur-premium">
+        <div class="card-elevated max-w-md w-full p-6 space-y-4">
+            <div class="flex items-center justify-between">
+                <h3 class="font-headline text-xl font-bold">Live Chat</h3>
+                <button id="closeChatBtn" class="w-8 h-8 rounded-lg bg-surface flex items-center justify-center hover:bg-accent transition-colors" aria-label="Close chat">
+                    <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+            <p class="font-body text-text-secondary text-sm">
+                Our live chat feature is currently being set up. In the meantime, please use one of our other contact methods:
+            </p>
+            <div class="space-y-3">
+                <a href="tel:+919876543210" class="btn-primary w-full text-center">Call Us Now</a>
+                <a href="https://wa.me/919876543210" target="_blank" rel="noopener noreferrer" class="btn-secondary w-full text-center">WhatsApp Chat</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Contact Form Handling
+        const contactForm = document.getElementById('contactForm');
+        const inquiryType = document.getElementById('inquiryType');
+        const reservationFields = document.getElementById('reservationFields');
+        const successMessage = document.getElementById('successMessage');
+
+        // Show/hide reservation fields based on inquiry type
+        inquiryType.addEventListener('change', (e) => {
+            if (e.target.value === 'reservation') {
+                reservationFields.classList.remove('hidden');
+            } else {
+                reservationFields.classList.add('hidden');
+            }
+        });
+
+        // Form submission
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            // Simulate form submission
+            setTimeout(() => {
+                successMessage.classList.remove('hidden');
+                contactForm.reset();
+                reservationFields.classList.add('hidden');
+                
+                // Scroll to success message
+                successMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                
+                // Hide success message after 5 seconds
+                setTimeout(() => {
+                    successMessage.classList.add('hidden');
+                }, 5000);
+            }, 500);
+        });
+
+        // FAQ Accordion
+        const faqTriggers = document.querySelectorAll('.faq-trigger');
+        
+        faqTriggers.forEach(trigger => {
+            trigger.addEventListener('click', () => {
+                const content = trigger.nextElementSibling;
+                const icon = trigger.querySelector('.faq-icon');
+                
+                // Close all other FAQs
+                faqTriggers.forEach(otherTrigger => {
+                    if (otherTrigger !== trigger) {
+                        const otherContent = otherTrigger.nextElementSibling;
+                        const otherIcon = otherTrigger.querySelector('.faq-icon');
+                        otherContent.classList.add('hidden');
+                        otherIcon.style.transform = 'rotate(0deg)';
+                    }
+                });
+                
+                // Toggle current FAQ
+                content.classList.toggle('hidden');
+                if (content.classList.contains('hidden')) {
+                    icon.style.transform = 'rotate(0deg)';
+                } else {
+                    icon.style.transform = 'rotate(180deg)';
+                }
+            });
+        });
+
+        // Live Chat Modal
+        const liveChatBtn = document.getElementById('liveChatBtn');
+        const liveChatModal = document.getElementById('liveChatModal');
+        const closeChatBtn = document.getElementById('closeChatBtn');
+
+        liveChatBtn.addEventListener('click', () => {
+            liveChatModal.classList.remove('hidden');
+        });
+
+        closeChatBtn.addEventListener('click', () => {
+            liveChatModal.classList.add('hidden');
+        });
+
+        // Close modal on outside click
+        liveChatModal.addEventListener('click', (e) => {
+            if (e.target === liveChatModal) {
+                liveChatModal.classList.add('hidden');
+            }
+        });
+
+        // Smooth Scroll for Anchor Links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Header Background on Scroll
+        const header = document.querySelector('header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                header.style.backgroundColor = 'rgba(15, 15, 15, 0.95)';
+            } else {
+                header.style.backgroundColor = 'rgba(15, 15, 15, 0.8)';
+            }
+        });
+
+        // Intersection Observer for Animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe all cards
+        document.querySelectorAll('.card-dramatic').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+            observer.observe(el);
+        });
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>

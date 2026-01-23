@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://hungers-junktion.alphazero.in/sitemap.xml

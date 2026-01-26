@@ -310,28 +310,45 @@
     <section id="categoryNav" class="py-8 bg-background">
         <div class="container mx-auto px-4 lg:px-8">
             <div class="flex gap-4 overflow-x-auto scrollbar-custom pb-4">
-                <button class="category-btn active" data-category="all">
-                    <span class="font-cta text-sm whitespace-nowrap">All Items</span>
-                </button>
-                <button class="category-btn" data-category="burgers">
-                    <span class="font-cta text-sm whitespace-nowrap">Burgers</span>
-                </button>
-                <button class="category-btn" data-category="pizza">
-                    <span class="font-cta text-sm whitespace-nowrap">Pizza</span>
-                </button>
-                <button class="category-btn" data-category="wraps">
-                    <span class="font-cta text-sm whitespace-nowrap">Wraps & Rolls</span>
-                </button>
-                <button class="category-btn" data-category="sides">
-                    <span class="font-cta text-sm whitespace-nowrap">Sides</span>
-                </button>
-                <button class="category-btn" data-category="beverages">
-                    <span class="font-cta text-sm whitespace-nowrap">Beverages</span>
-                </button>
-                <button class="category-btn" data-category="desserts">
-                    <span class="font-cta text-sm whitespace-nowrap">Desserts</span>
-                </button>
+
+            <button class="category-btn active" data-category="all">
+                <span class="font-cta text-sm whitespace-nowrap">All Items</span>
+            </button>
+
+            <button class="category-btn" data-category="burgers">
+                <span class="font-cta text-sm whitespace-nowrap">Burgers</span>
+            </button>
+
+            <button class="category-btn" data-category="pizza">
+                <span class="font-cta text-sm whitespace-nowrap">Pizza</span>
+            </button>
+
+            <button class="category-btn" data-category="wraps">
+                <span class="font-cta text-sm whitespace-nowrap">Wraps</span>
+            </button>
+
+            <button class="category-btn" data-category="sandwiches">
+                <span class="font-cta text-sm whitespace-nowrap">Sandwiches</span>
+            </button>
+
+            <button class="category-btn" data-category="fries">
+                <span class="font-cta text-sm whitespace-nowrap">Fries</span>
+            </button>
+
+            <button class="category-btn" data-category="quick-bites">
+                <span class="font-cta text-sm whitespace-nowrap">Quick Bites</span>
+            </button>
+
+            <button class="category-btn" data-category="momos">
+                <span class="font-cta text-sm whitespace-nowrap">Momos</span>
+            </button>
+
+            <button class="category-btn" data-category="combos">
+                <span class="font-cta text-sm whitespace-nowrap">Combos</span>
+            </button>
+
             </div>
+
         </div>
     </section>
 
@@ -489,490 +506,256 @@
 
     <!-- JavaScript -->
     <script>
-        // Menu Data
         const menuData = [
-            // Burgers
-            {
-                id: 1,
-                name: "Signature Flame Burger",
-                category: "burgers",
-                type: "non-veg",
-                price: 349,
-                image: "https://images.pexels.com/photos/1639557/pexels-photo-1639557.jpeg?auto=compress&cs=tinysrgb&w=800",
-                alt: "Signature Flame Burger with double beef patty, melted cheddar cheese, crispy bacon, fresh lettuce, and special flame sauce on a toasted sesame bun",
-                description: "Double beef patty with melted cheddar, crispy bacon, and our secret flame sauce",
-                rating: 4.9,
-                prepTime: "15-20 min",
-                calories: 680,
-                protein: 42,
-                carbs: 48,
-                fat: 35,
-                ingredients: ["Beef Patty", "Cheddar Cheese", "Bacon", "Lettuce", "Tomato", "Flame Sauce", "Sesame Bun"],
-                allergens: ["Gluten", "Dairy", "Eggs"],
-                dietary: [],
-                spiceLevel: "mild",
-                popular: true
-            },
-            {
-                id: 2,
-                name: "Classic Chicken Burger",
-                category: "burgers",
-                type: "non-veg",
-                price: 299,
-                image: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=800&auto=format&fit=crop",
-                alt: "Classic Chicken Burger with grilled chicken breast, fresh lettuce, tomato, pickles, and mayo on a soft brioche bun",
-                description: "Grilled chicken breast with fresh veggies and creamy mayo",
-                rating: 4.7,
-                prepTime: "12-15 min",
-                calories: 520,
-                protein: 38,
-                carbs: 42,
-                fat: 22,
-                ingredients: ["Chicken Breast", "Lettuce", "Tomato", "Pickles", "Mayo", "Brioche Bun"],
-                allergens: ["Gluten", "Eggs"],
-                dietary: [],
-                spiceLevel: "mild"
-            },
-            {
-                id: 3,
-                name: "Paneer Tikka Burger",
-                category: "burgers",
-                type: "veg",
-                price: 279,
-                image: "https://images.pixabay.com/photo/2020/03/29/10/23/burger-4981213_1280.jpg",
-                alt: "Paneer Tikka Burger with marinated grilled paneer, mint chutney, onions, and fresh vegetables on whole wheat bun",
-                description: "Marinated paneer tikka with mint chutney and fresh veggies",
-                rating: 4.8,
-                prepTime: "12-15 min",
-                calories: 450,
-                protein: 22,
-                carbs: 48,
-                fat: 18,
-                ingredients: ["Paneer", "Tikka Marinade", "Mint Chutney", "Onions", "Lettuce", "Whole Wheat Bun"],
-                allergens: ["Gluten", "Dairy"],
-                dietary: ["vegan"],
-                spiceLevel: "medium",
-                popular: true
-            },
-            {
-                id: 4,
-                name: "Mushroom Swiss Burger",
-                category: "burgers",
-                type: "veg",
-                price: 319,
-                image: "https://images.pexels.com/photos/3738730/pexels-photo-3738730.jpeg?auto=compress&cs=tinysrgb&w=800",
-                alt: "Mushroom Swiss Burger with sautéed mushrooms, melted Swiss cheese, caramelized onions on a toasted bun",
-                description: "Sautéed mushrooms with Swiss cheese and caramelized onions",
-                rating: 4.6,
-                prepTime: "15-18 min",
-                calories: 480,
-                protein: 18,
-                carbs: 52,
-                fat: 24,
-                ingredients: ["Mushrooms", "Swiss Cheese", "Caramelized Onions", "Garlic Aioli", "Brioche Bun"],
-                allergens: ["Gluten", "Dairy"],
-                dietary: [],
-                spiceLevel: "mild"
-            },
+            /* =====================================================
+            VEG BURGERS
+            ===================================================== */
+            { id: 1, name: "Veg Burger", category: "burgers", type: "veg", price: 69, image: "/assets/menu/veg/burger/veg-burger.png" },
+            { id: 2, name: "Herb Chilli Burger", category: "burgers", type: "veg", price: 69, image: "/assets/menu/veg/burger/herb-chilli-burger.png" },
+            { id: 3, name: "Veg Burger Jumbo", category: "burgers", type: "veg", price: 79, image: "/assets/menu/veg/burger/veg-burger-jumbo.png" },
+            { id: 4, name: "Desi Rich Makhni Burger", category: "burgers", type: "veg", price: 129, image: "/assets/menu/veg/burger/desi-rich-makhni-burger.png" },
+            { id: 5, name: "Spicy Barbeque Burger", category: "burgers", type: "veg", price: 129, image: "/assets/menu/veg/burger/spicy-barbeque-burger.png" },
+            { id: 6, name: "Mexican Burger", category: "burgers", type: "veg", price: 129, image: "/assets/menu/veg/burger/mexican-burger.png" },
+            { id: 7, name: "Peri Peri Burger", category: "burgers", type: "veg", price: 129, image: "/assets/menu/veg/burger/peri-peri-burger.png" },
+            { id: 8, name: "Spicy Smoky Paneer Burger", category: "burgers", type: "veg", price: 149, image: "/assets/menu/veg/burger/spicy-smoky-paneer-burger.png" },
+            { id: 9, name: "Smoky Tandoor Tower Burger", category: "burgers", type: "veg", price: 179, image: "/assets/menu/veg/burger/smoky-tandoor-tower-burger.png" },
 
-            // Pizza
-            {
-                id: 5,
-                name: "Margherita Supreme",
-                category: "pizza",
-                type: "veg",
-                price: 299,
-                image: "https://images.pixabay.com/photo/2020/06/08/16/49/pizza-5275191_1280.jpg",
-                alt: "Margherita Supreme pizza with fresh mozzarella, vine-ripened tomatoes, and aromatic basil on thin hand-tossed crust",
-                description: "Fresh mozzarella, tomatoes, and basil on thin crust",
-                rating: 4.8,
-                prepTime: "18-22 min",
-                calories: 580,
-                protein: 24,
-                carbs: 68,
-                fat: 22,
-                ingredients: ["Mozzarella", "Tomatoes", "Basil", "Olive Oil", "Pizza Dough"],
-                allergens: ["Gluten", "Dairy"],
-                dietary: [],
-                spiceLevel: "mild",
-                popular: true
-            },
-            {
-                id: 6,
-                name: "Pepperoni Blast",
-                category: "pizza",
-                type: "non-veg",
-                price: 399,
-                image: "https://images.unsplash.com/photo-1628840042765-356cda07504e?q=80&w=800&auto=format&fit=crop",
-                alt: "Pepperoni Blast pizza loaded with premium pepperoni slices, mozzarella cheese, and Italian herbs on crispy crust",
-                description: "Loaded with premium pepperoni and mozzarella",
-                rating: 4.9,
-                prepTime: "18-22 min",
-                calories: 720,
-                protein: 32,
-                carbs: 72,
-                fat: 35,
-                ingredients: ["Pepperoni", "Mozzarella", "Tomato Sauce", "Italian Herbs", "Pizza Dough"],
-                allergens: ["Gluten", "Dairy"],
-                dietary: [],
-                spiceLevel: "mild",
-                popular: true
-            },
-            {
-                id: 7,
-                name: "Veggie Delight",
-                category: "pizza",
-                type: "veg",
-                price: 329,
-                image: "https://images.pexels.com/photos/2147491/pexels-photo-2147491.jpeg?auto=compress&cs=tinysrgb&w=800",
-                alt: "Veggie Delight pizza with bell peppers, mushrooms, olives, onions, and corn on mozzarella cheese base",
-                description: "Bell peppers, mushrooms, olives, and fresh vegetables",
-                rating: 4.7,
-                prepTime: "18-22 min",
-                calories: 520,
-                protein: 20,
-                carbs: 64,
-                fat: 20,
-                ingredients: ["Bell Peppers", "Mushrooms", "Olives", "Onions", "Corn", "Mozzarella", "Pizza Dough"],
-                allergens: ["Gluten", "Dairy"],
-                dietary: [],
-                spiceLevel: "mild"
-            },
-            {
-                id: 8,
-                name: "BBQ Chicken Pizza",
-                category: "pizza",
-                type: "non-veg",
-                price: 379,
-                image: "https://images.pixabay.com/photo/2017/12/09/08/18/pizza-3007395_1280.jpg",
-                alt: "BBQ Chicken Pizza with grilled chicken, tangy BBQ sauce, red onions, and cilantro on mozzarella base",
-                description: "Grilled chicken with tangy BBQ sauce and red onions",
-                rating: 4.8,
-                prepTime: "20-24 min",
-                calories: 680,
-                protein: 36,
-                carbs: 70,
-                fat: 28,
-                ingredients: ["Chicken", "BBQ Sauce", "Red Onions", "Cilantro", "Mozzarella", "Pizza Dough"],
-                allergens: ["Gluten", "Dairy"],
-                dietary: [],
-                spiceLevel: "medium"
-            },
+            /* =====================================================
+            VEG WRAPS
+            ===================================================== */
+            { id: 10, name: "Chettinad Mix Vegetable Wrap", category: "wraps", type: "veg", price: 89, image: "/assets/menu/veg/wrap/chettinad-mix-vegetable-wrap.png" },
+            { id: 11, name: "Spicy Aloo Tikki Wrap", category: "wraps", type: "veg", price: 89, image: "/assets/menu/veg/wrap/spicy-aloo-tikki-wrap.png" },
+            { id: 12, name: "Veg Falafel Wrap", category: "wraps", type: "veg", price: 89, image: "/assets/menu/veg/wrap/veg-falafel-wrap.png" },
+            { id: 13, name: "Cheese Corn Wrap", category: "wraps", type: "veg", price: 89, image: "/assets/menu/veg/wrap/cheese-corn-wrap.png" },
+            { id: 14, name: "Mexican Paneer Wrap", category: "wraps", type: "veg", price: 89, image: "/assets/menu/veg/wrap/mexican-paneer-wrap.png" },
+            { id: 15, name: "Chilli Cheese Veg Wrap", category: "wraps", type: "veg", price: 99, image: "/assets/menu/veg/wrap/chilli-cheese-veg-wrap.png" },
 
-            // Wraps & Rolls
-            {
-                id: 9,
-                name: "Chicken Tikka Wrap",
-                category: "wraps",
-                type: "non-veg",
-                price: 249,
-                image: "https://images.unsplash.com/photo-1626700051175-6818013e1d4f?q=80&w=800&auto=format&fit=crop",
-                alt: "Chicken Tikka Wrap with marinated grilled chicken, fresh vegetables, mint chutney wrapped in soft tortilla",
-                description: "Marinated chicken tikka with fresh veggies in soft tortilla",
-                rating: 4.7,
-                prepTime: "10-12 min",
-                calories: 420,
-                protein: 32,
-                carbs: 38,
-                fat: 16,
-                ingredients: ["Chicken Tikka", "Lettuce", "Tomato", "Onions", "Mint Chutney", "Tortilla"],
-                allergens: ["Gluten"],
-                dietary: [],
-                spiceLevel: "medium",
-                popular: true
-            },
-            {
-                id: 10,
-                name: "Paneer Kathi Roll",
-                category: "wraps",
-                type: "veg",
-                price: 219,
-                image: "https://images.pexels.com/photos/5410400/pexels-photo-5410400.jpeg?auto=compress&cs=tinysrgb&w=800",
-                alt: "Paneer Kathi Roll with spiced paneer, onions, peppers, and tangy sauce wrapped in paratha",
-                description: "Spiced paneer with onions and peppers in paratha wrap",
-                rating: 4.6,
-                prepTime: "10-12 min",
-                calories: 380,
-                protein: 18,
-                carbs: 42,
-                fat: 16,
-                ingredients: ["Paneer", "Onions", "Bell Peppers", "Spices", "Paratha"],
-                allergens: ["Gluten", "Dairy"],
-                dietary: [],
-                spiceLevel: "medium"
-            },
-            {
-                id: 11,
-                name: "Falafel Wrap",
-                category: "wraps",
-                type: "veg",
-                price: 229,
-                image: "https://images.pixabay.com/photo/2017/06/29/20/09/mexican-2456038_1280.jpg",
-                alt: "Falafel Wrap with crispy falafel balls, hummus, fresh vegetables, and tahini sauce in pita bread",
-                description: "Crispy falafel with hummus and fresh vegetables",
-                rating: 4.5,
-                prepTime: "10-12 min",
-                calories: 360,
-                protein: 14,
-                carbs: 48,
-                fat: 14,
-                ingredients: ["Falafel", "Hummus", "Lettuce", "Tomato", "Tahini", "Pita Bread"],
-                allergens: ["Gluten", "Sesame"],
-                dietary: ["vegan"],
-                spiceLevel: "mild"
-            },
+            /* =====================================================
+            VEG SANDWICHES
+            ===================================================== */
+            { id: 16, name: "Chettinad Mix Veg Sandwich", category: "sandwiches", type: "veg", price: 89, image: "/assets/menu/veg/sandwich/chettinad-mix-veg-sandwich.png" },
+            { id: 17, name: "Veg Aloo Tikki Sandwich", category: "sandwiches", type: "veg", price: 99, image: "/assets/menu/veg/sandwich/veg-aloo-tikki-sandwich.png" },
+            { id: 18, name: "Veg Falafel Sandwich", category: "sandwiches", type: "veg", price: 99, image: "/assets/menu/veg/sandwich/veg-falafel-sandwich.png" },
+            { id: 19, name: "Veg Cheese Corn Grilled", category: "sandwiches", type: "veg", price: 99, image: "/assets/menu/veg/sandwich/veg-cheese-corn-grilled.png" },
+            { id: 20, name: "Chilli Cheese Veg Sandwich", category: "sandwiches", type: "veg", price: 99, image: "/assets/menu/veg/sandwich/chilli-cheese-veg-sandwich.png" },
+            { id: 21, name: "Veg Mexican Paneer Sandwich", category: "sandwiches", type: "veg", price: 99, image: "/assets/menu/veg/sandwich/veg-mexican-paneer-sandwich.png" },
 
-            // Sides
-            {
-                id: 12,
-                name: "Crispy French Fries",
-                category: "sides",
-                type: "veg",
-                price: 129,
-                image: "https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg?auto=compress&cs=tinysrgb&w=800",
-                alt: "Crispy golden French fries seasoned with sea salt and herbs, served hot and fresh",
-                description: "Golden crispy fries with sea salt",
-                rating: 4.8,
-                prepTime: "8-10 min",
-                calories: 320,
-                protein: 4,
-                carbs: 42,
-                fat: 16,
-                ingredients: ["Potatoes", "Sea Salt", "Vegetable Oil"],
-                allergens: [],
-                dietary: ["vegan", "gluten-free"],
-                spiceLevel: "mild",
-                popular: true
-            },
-            {
-                id: 13,
-                name: "Loaded Cheese Fries",
-                category: "sides",
-                type: "veg",
-                price: 179,
-                image: "https://images.unsplash.com/photo-1573080496219-bb080dd4f877?q=80&w=800&auto=format&fit=crop",
-                alt: "Loaded Cheese Fries topped with melted cheddar, bacon bits, jalapeños, and sour cream",
-                description: "Fries loaded with cheese, bacon, and jalapeños",
-                rating: 4.7,
-                prepTime: "10-12 min",
-                calories: 480,
-                protein: 12,
-                carbs: 48,
-                fat: 28,
-                ingredients: ["Fries", "Cheddar Cheese", "Bacon Bits", "Jalapeños", "Sour Cream"],
-                allergens: ["Dairy"],
-                dietary: [],
-                spiceLevel: "medium"
-            },
-            {
-                id: 14,
-                name: "Onion Rings",
-                category: "sides",
-                type: "veg",
-                price: 149,
-                image: "https://images.pixabay.com/photo/2016/11/20/09/06/onion-rings-1842082_1280.jpg",
-                alt: "Crispy golden onion rings with crunchy breading, served with tangy dipping sauce",
-                description: "Crispy battered onion rings with dipping sauce",
-                rating: 4.6,
-                prepTime: "8-10 min",
-                calories: 280,
-                protein: 6,
-                carbs: 36,
-                fat: 14,
-                ingredients: ["Onions", "Batter", "Breadcrumbs", "Dipping Sauce"],
-                allergens: ["Gluten", "Eggs"],
-                dietary: [],
-                spiceLevel: "mild"
-            },
-            {
-                id: 15,
-                name: "Chicken Wings",
-                category: "sides",
-                type: "non-veg",
-                price: 249,
-                image: "https://images.pexels.com/photos/60616/fried-chicken-chicken-fried-crunchy-60616.jpeg?auto=compress&cs=tinysrgb&w=800",
-                alt: "Spicy chicken wings with crispy coating, served with blue cheese dip and celery sticks",
-                description: "Spicy wings with blue cheese dip",
-                rating: 4.9,
-                prepTime: "15-18 min",
-                calories: 420,
-                protein: 28,
-                carbs: 12,
-                fat: 32,
-                ingredients: ["Chicken Wings", "Hot Sauce", "Blue Cheese Dip", "Celery"],
-                allergens: ["Dairy"],
-                dietary: ["gluten-free"],
-                spiceLevel: "hot",
-                popular: true
-            },
+            /* =====================================================
+            VEG ROLLS & SAMOSA
+            ===================================================== */
+            { id: 22, name: "Punjabi Samosa", category: "samosa", type: "veg", price: 29, quantity: "2 pcs", image: "/assets/menu/veg/samosa/punjabi-samosa.png" },
+            { id: 23, name: "Corn Samosa", category: "samosa", type: "veg", price: 59, quantity: "3 pcs", image: "/assets/menu/veg/samosa/corn-samosa.png" },
+            { id: 24, name: "Paneer Samosa", category: "samosa", type: "veg", price: 69, quantity: "3 pcs", image: "/assets/menu/veg/samosa/paneer-samosa.png" },
+            { id: 25, name: "Veg Roll", category: "rolls", type: "veg", price: 59, quantity: "3 pcs", image: "/assets/menu/veg/rolls/veg-roll.png" },
+            { id: 26, name: "Veg Spring Roll", category: "rolls", type: "veg", price: 59, quantity: "3 pcs", image: "/assets/menu/veg/rolls/veg-spring-roll.png" },
+            { id: 27, name: "Paneer Roll", category: "rolls", type: "veg", price: 69, quantity: "3 pcs", image: "/assets/menu/veg/rolls/paneer-roll.png" },
 
-            // Beverages
-            {
-                id: 16,
-                name: "Classic Coke",
-                category: "beverages",
-                type: "veg",
-                price: 79,
-                image: "https://images.unsplash.com/photo-1546173159-315724a31696?q=80&w=800&auto=format&fit=crop",
-                alt: "Classic Coca-Cola served chilled with ice in a tall glass",
-                description: "Chilled Coca-Cola",
-                rating: 4.5,
-                prepTime: "2 min",
-                calories: 140,
-                protein: 0,
-                carbs: 39,
-                fat: 0,
-                ingredients: ["Carbonated Water", "Sugar", "Caramel Color", "Natural Flavors"],
-                allergens: [],
-                dietary: ["vegan"],
-                spiceLevel: "mild"
-            },
-            {
-                id: 17,
-                name: "Fresh Lime Soda",
-                category: "beverages",
-                type: "veg",
-                price: 89,
-                image: "https://images.pixabay.com/photo/2016/08/23/08/54/drinks-1614822_1280.jpg",
-                alt: "Fresh Lime Soda with fresh lime juice, soda water, mint leaves, and ice",
-                description: "Refreshing lime with soda and mint",
-                rating: 4.7,
-                prepTime: "3 min",
-                calories: 60,
-                protein: 0,
-                carbs: 15,
-                fat: 0,
-                ingredients: ["Fresh Lime", "Soda Water", "Mint", "Sugar"],
-                allergens: [],
-                dietary: ["vegan"],
-                spiceLevel: "mild",
-                popular: true
-            },
-            {
-                id: 18,
-                name: "Mango Lassi",
-                category: "beverages",
-                type: "veg",
-                price: 119,
-                image: "https://images.pexels.com/photos/1337824/pexels-photo-1337824.jpeg?auto=compress&cs=tinysrgb&w=800",
-                alt: "Creamy Mango Lassi made with fresh mangoes, yogurt, and cardamom",
-                description: "Creamy yogurt drink with fresh mango",
-                rating: 4.8,
-                prepTime: "4 min",
-                calories: 180,
-                protein: 6,
-                carbs: 32,
-                fat: 4,
-                ingredients: ["Mango", "Yogurt", "Sugar", "Cardamom"],
-                allergens: ["Dairy"],
-                dietary: [],
-                spiceLevel: "mild"
-            },
-            {
-                id: 19,
-                name: "Iced Coffee",
-                category: "beverages",
-                type: "veg",
-                price: 129,
-                image: "https://images.unsplash.com/photo-1517487881594-2787fef5ebf7?q=80&w=800&auto=format&fit=crop",
-                alt: "Iced Coffee with cold brew, milk, and ice cubes in a tall glass",
-                description: "Cold brew coffee with milk and ice",
-                rating: 4.6,
-                prepTime: "3 min",
-                calories: 120,
-                protein: 4,
-                carbs: 18,
-                fat: 4,
-                ingredients: ["Coffee", "Milk", "Sugar", "Ice"],
-                allergens: ["Dairy"],
-                dietary: [],
-                spiceLevel: "mild"
-            },
+            /* =====================================================
+            VEG FRIES
+            ===================================================== */
+            { id: 28, name: "Regular Fries", category: "fries", type: "veg", price: 59, quantity: "120gms", image: "/assets/menu/veg/fries/regular-fries.png" },
+            { id: 29, name: "Peri Peri Fries", category: "fries", type: "veg", price: 69, quantity: "120gms", image: "/assets/menu/veg/fries/peri-peri-fries.png" },
+            { id: 30, name: "Lime & Mint Veggies", category: "fries", type: "veg", price: 79, quantity: "120gms", image: "/assets/menu/veg/fries/lime-mint-veggies.png" },
+            { id: 31, name: "Smileys", category: "fries", type: "veg", price: 69, quantity: "5 pcs", image: "/assets/menu/veg/fries/smileys.png" },
+            { id: 32, name: "Cheese Fries", category: "fries", type: "veg", price: 79, image: "/assets/menu/veg/fries/cheese-fries.png" },
+            { id: 33, name: "Masala Fries", category: "fries", type: "veg", price: 79, quantity: "120gms", image: "/assets/menu/veg/fries/masala-fries.png" },
 
-            // Desserts
-            {
-                id: 20,
-                name: "Chocolate Brownie",
-                category: "desserts",
-                type: "veg",
-                price: 149,
-                image: "https://images.pexels.com/photos/1055272/pexels-photo-1055272.jpeg?auto=compress&cs=tinysrgb&w=800",
-                alt: "Rich chocolate brownie with fudgy center, topped with vanilla ice cream and chocolate sauce",
-                description: "Rich chocolate brownie with vanilla ice cream",
-                rating: 4.9,
-                prepTime: "5 min",
-                calories: 420,
-                protein: 6,
-                carbs: 52,
-                fat: 22,
-                ingredients: ["Chocolate", "Butter", "Eggs", "Flour", "Vanilla Ice Cream"],
-                allergens: ["Gluten", "Dairy", "Eggs"],
-                dietary: [],
-                spiceLevel: "mild",
-                popular: true
-            },
-            {
-                id: 21,
-                name: "Gulab Jamun",
-                category: "desserts",
-                type: "veg",
-                price: 99,
-                image: "https://images.pixabay.com/photo/2018/04/15/09/31/gulab-jamun-3321151_1280.jpg",
-                alt: "Traditional Gulab Jamun - soft milk dumplings soaked in rose-flavored sugar syrup",
-                description: "Traditional Indian sweet in sugar syrup",
-                rating: 4.8,
-                prepTime: "3 min",
-                calories: 280,
-                protein: 4,
-                carbs: 48,
-                fat: 10,
-                ingredients: ["Milk Solids", "Sugar Syrup", "Rose Water", "Cardamom"],
-                allergens: ["Dairy"],
-                dietary: [],
-                spiceLevel: "mild"
-            },
-            {
-                id: 22,
-                name: "Vanilla Milkshake",
-                category: "desserts",
-                type: "veg",
-                price: 139,
-                image: "https://images.unsplash.com/photo-1572490122747-3968b75cc699?q=80&w=800&auto=format&fit=crop",
-                alt: "Creamy vanilla milkshake topped with whipped cream and chocolate sprinkles",
-                description: "Creamy vanilla shake with whipped cream",
-                rating: 4.7,
-                prepTime: "4 min",
-                calories: 320,
-                protein: 8,
-                carbs: 42,
-                fat: 14,
-                ingredients: ["Vanilla Ice Cream", "Milk", "Whipped Cream", "Chocolate Sprinkles"],
-                allergens: ["Dairy"],
-                dietary: [],
-                spiceLevel: "mild"
-            },
-            {
-                id: 23,
-                name: "Apple Pie",
-                category: "desserts",
-                type: "veg",
-                price: 159,
-                image: "https://images.pexels.com/photos/5848391/pexels-photo-5848391.jpeg?auto=compress&cs=tinysrgb&w=800",
-                alt: "Warm apple pie with flaky crust, cinnamon-spiced apples, served with vanilla ice cream",
-                description: "Warm apple pie with cinnamon and ice cream",
-                rating: 4.6,
-                prepTime: "6 min",
-                calories: 380,
-                protein: 4,
-                carbs: 56,
-                fat: 16,
-                ingredients: ["Apples", "Pie Crust", "Cinnamon", "Sugar", "Vanilla Ice Cream"],
-                allergens: ["Gluten", "Dairy", "Eggs"],
-                dietary: [],
-                spiceLevel: "mild"
-            }
+            /* =====================================================
+            VEG QUICK BITES
+            ===================================================== */
+            { id: 34, name: "Veg Nuggets", category: "quick-bites", type: "veg", price: 69, quantity: "5 pcs", image: "/assets/menu/veg/quick-bites/veg-nuggets.png" },
+            { id: 35, name: "Veg Fingers", category: "quick-bites", type: "veg", price: 69, quantity: "5 pcs", image: "/assets/menu/veg/quick-bites/veg-fingers.png" },
+            { id: 36, name: "Veg Cheese Pizza Fingers", category: "quick-bites", type: "veg", price: 79, quantity: "5 pcs", image: "/assets/menu/veg/quick-bites/veg-cheese-pizza-fingers.png" },
+            { id: 37, name: "Veg Pizza Pocket", category: "quick-bites", type: "veg", price: 79, image: "/assets/menu/veg/quick-bites/veg-pizza-pocket.png" },
+            { id: 38, name: "Jalapeno Poppers", category: "quick-bites", type: "veg", price: 79, quantity: "5 pcs", image: "/assets/menu/veg/quick-bites/jalapeno-poppers.png" },
+            { id: 39, name: "Cheesy Corn Nuggets", category: "quick-bites", type: "veg", price: 79, quantity: "5 pcs", image: "/assets/menu/veg/quick-bites/cheesy-corn-nuggets.png" },
+            { id: 40, name: "Onion Rings", category: "quick-bites", type: "veg", price: 79, quantity: "4 pcs", image: "/assets/menu/veg/quick-bites/onion-rings.png" },
+            { id: 41, name: "Chilli Cheese Burst", category: "quick-bites", type: "veg", price: 89, quantity: "5 pcs", image: "/assets/menu/veg/quick-bites/chilli-cheese-burst.png" },
+            { id: 42, name: "Mozzarella Cheese Sticks", category: "quick-bites", type: "veg", price: 89, quantity: "3 pcs", image: "/assets/menu/veg/quick-bites/mozzarella-cheese-sticks.png" },
+
+            /* =====================================================
+            VEG MOMOS
+            ===================================================== */
+            { id: 43, name: "Mix Veg Momos", category: "momos", type: "veg", price: 69, quantity: "5 pcs", image: "/assets/menu/veg/momos/mix-veg-momos.png" },
+            { id: 44, name: "Corn & Cheese Momos", category: "momos", type: "veg", price: 79, quantity: "5 pcs", image: "/assets/menu/veg/momos/corn-cheese-momos.png" },
+            { id: 45, name: "Paneer Momos", category: "momos", type: "veg", price: 79, quantity: "5 pcs", image: "/assets/menu/veg/momos/paneer-momos.png" },
+            { id: 46, name: "Mushroom Momos", category: "momos", type: "veg", price: 79, quantity: "5 pcs", image: "/assets/menu/veg/momos/mushroom-momos.png" },
+            { id: 47, name: "Paneer Tikka Momos", category: "momos", type: "veg", price: 79, quantity: "5 pcs", image: "/assets/menu/veg/momos/paneer-tikka-momos.png" },
+            { id: 48, name: "Veg Schezwan Momos", category: "momos", type: "veg", price: 79, quantity: "5 pcs", image: "/assets/menu/veg/momos/veg-schezwan-momos.png" },
+            { id: 49, name: "Mix Momos Combo", category: "momos", type: "veg", price: 89, quantity: "6 pcs", image: "/assets/menu/veg/momos/mix-momos-combo.png" },
+
+            /* =====================================================
+            VEG VADA PAV
+            ===================================================== */
+            { id: 50, name: "Classic Vada Pav", category: "vada-pav", type: "veg", price: 39, image: "/assets/menu/veg/vada-pav/classic-vada-pav.png" },
+            { id: 51, name: "Veg Samosa Vada Pav", category: "vada-pav", type: "veg", price: 39, image: "/assets/menu/veg/vada-pav/veg-samosa-vada-pav.png" },
+            { id: 52, name: "Butter Grilled Vada Pav", category: "vada-pav", type: "veg", price: 49, image: "/assets/menu/veg/vada-pav/butter-grilled-vada-pav.png" },
+            { id: 53, name: "Sabudana Vada", category: "vada-pav", type: "veg", price: 49, quantity: "2 pcs", image: "/assets/menu/veg/vada-pav/sabudana-vada.png" },
+            { id: 54, name: "Aloo Tikka Vada Pav", category: "vada-pav", type: "veg", price: 49, image: "/assets/menu/veg/vada-pav/aloo-tikka-vada-pav.png" },
+            { id: 55, name: "Masala Vada Pav", category: "vada-pav", type: "veg", price: 49, image: "/assets/menu/veg/vada-pav/masala-vada-pav.png" },
+            { id: 56, name: "Crispy Vada Pav", category: "vada-pav", type: "veg", price: 49, image: "/assets/menu/veg/vada-pav/crispy-vada-pav.png" },
+            { id: 57, name: "Cheese Vada Pav", category: "vada-pav", type: "veg", price: 59, image: "/assets/menu/veg/vada-pav/cheese-vada-pav.png" },
+            { id: 58, name: "Harabara Vada Pav", category: "vada-pav", type: "veg", price: 49, image: "/assets/menu/veg/vada-pav/harabara-vada-pav.png" },
+            { id: 59, name: "Veg Schezwan Vada Pav", category: "vada-pav", type: "veg", price: 49, image: "/assets/menu/veg/vada-pav/veg-schezwan-vada-pav.png" },
+            { id: 60, name: "Makkai Palak Vada Pav", category: "vada-pav", type: "veg", price: 59, image: "/assets/menu/veg/vada-pav/makkai-palak-vada-pav.png" },
+            { id: 61, name: "Maharaja Vada Pav", category: "vada-pav", type: "veg", price: 59, image: "/assets/menu/veg/vada-pav/maharaja-vada-pav.png" },
+            { id: 62, name: "Mix Veg Vada Pav", category: "vada-pav", type: "veg", price: 59, image: "/assets/menu/veg/vada-pav/mix-veg-vada-pav.png" },
+            { id: 63, name: "Pav Bhaji", category: "vada-pav", type: "veg", price: 89, image: "/assets/menu/veg/vada-pav/pav-bhaji.png" },
+            { id: 64, name: "Royal Classic Vada Pav - Desi Rich Makhni", category: "vada-pav", type: "veg", price: 89, image: "/assets/menu/veg/vada-pav/royal-classic-vada-pav-makhni.png" },
+            { id: 65, name: "Royal Classic Vada Pav - Spicy Barbeque", category: "vada-pav", type: "veg", price: 89, image: "/assets/menu/veg/vada-pav/royal-classic-vada-pav-barbeque.png" },
+            { id: 66, name: "Royal Classic Vada Pav - Mexican", category: "vada-pav", type: "veg", price: 89, image: "/assets/menu/veg/vada-pav/royal-classic-vada-pav-mexican.png" },
+            { id: 67, name: "Royal Classic Vada Pav - Peri Peri", category: "vada-pav", type: "veg", price: 89, image: "/assets/menu/veg/vada-pav/royal-classic-vada-pav-peri-peri.png" },
+            { id: 68, name: "Spicy Smoky Tandoori Paneer Vada Pav", category: "vada-pav", type: "veg", price: 99, image: "/assets/menu/veg/vada-pav/spicy-smoky-tandoori-paneer-vada-pav.png" },
+
+            /* =====================================================
+            VEG COMBOS
+            ===================================================== */
+            { id: 69, name: "Veg Mingles Snacks Combo", category: "combos", type: "veg", price: 179, quantity: "15 pcs", image: "/assets/menu/veg/combos/veg-mingles-snacks-combo.png" },
+            { id: 70, name: "Veg Momos Mingles Combo", category: "combos", type: "veg", price: 199, quantity: "15 pcs", image: "/assets/menu/veg/combos/veg-momos-mingles-combo.png" },
+            { id: 71, name: "Veg Rolls Mingle Combo", category: "combos", type: "veg", price: 169, quantity: "9 pcs", image: "/assets/menu/veg/combos/veg-rolls-mingle-combo.png" },
+            { id: 72, name: "Veg Samosa Mingle Combo", category: "combos", type: "veg", price: 129, quantity: "9 pcs", image: "/assets/menu/veg/combos/veg-samosa-mingle-combo.png" },
+            { id: 73, name: "Sandwich + Fries + Coke", category: "combos", type: "veg", price: 149, image: "/assets/menu/veg/combos/sandwich-fries-coke.png" },
+            { id: 74, name: "Veg Wrap + Fries + Coke", category: "combos", type: "veg", price: 149, image: "/assets/menu/veg/combos/veg-wrap-fries-coke.png" },
+            { id: 75, name: "Royal Classic Vada Pav + Fries + Coke", category: "combos", type: "veg", price: 149, image: "/assets/menu/veg/combos/royal-vada-pav-fries-coke.png" },
+            { id: 76, name: "Royal Gourmet Burger + Fries + Coke", category: "combos", type: "veg", price: 199, image: "/assets/menu/veg/combos/royal-gourmet-burger-fries-coke.png" },
+
+            /* =====================================================
+            VEG PIZZA
+            ===================================================== */
+            { id: 77, name: "Pizza Margherita", category: "pizza", type: "veg", price: 149, priceLarge: 179, image: "/assets/menu/veg/pizza/pizza-margherita.png" },
+            { id: 78, name: "Veg Cheese Corn Pizza", category: "pizza", type: "veg", price: 169, priceLarge: 249, image: "/assets/menu/veg/pizza/veg-cheese-corn-pizza.png" },
+            { id: 79, name: "Paneer Corn Cheese Blast", category: "pizza", type: "veg", price: 189, priceLarge: 299, image: "/assets/menu/veg/pizza/paneer-corn-cheese-blast.png" },
+            { id: 80, name: "Desi Makhni Mushroom Pizza", category: "pizza", type: "veg", price: 189, priceLarge: 299, image: "/assets/menu/veg/pizza/desi-makhni-mushroom-pizza.png" },
+            { id: 81, name: "Renaissance Pizza", category: "pizza", type: "veg", price: 199, priceLarge: 349, image: "/assets/menu/veg/pizza/renaissance-pizza.png" },
+            { id: 82, name: "Extravaganza Pizza", category: "pizza", type: "veg", price: 199, priceLarge: 349, image: "/assets/menu/veg/pizza/extravaganza-pizza.png" },
+            { id: 83, name: "Momos Pizza Special", category: "pizza", type: "veg", price: 219, priceLarge: 379, image: "/assets/menu/veg/pizza/momos-pizza-special.png" },
+
+            /* =====================================================
+            VEG GARLIC BREADS
+            ===================================================== */
+            { id: 84, name: "Garlic Bread Regular", category: "garlic-bread", type: "veg", price: 129, quantity: "3 pcs", image: "/assets/menu/veg/garlic-bread/garlic-bread-regular.png" },
+            { id: 85, name: "Cheese Corn Garlic Bread", category: "garlic-bread", type: "veg", price: 139, quantity: "3 pcs", image: "/assets/menu/veg/garlic-bread/cheese-corn-garlic-bread.png" },
+            { id: 86, name: "Cheese Paneer Garlic Bread", category: "garlic-bread", type: "veg", price: 149, quantity: "3 pcs", image: "/assets/menu/veg/garlic-bread/cheese-paneer-garlic-bread.png" },
+
+            /* =====================================================
+            SPECIAL SUNDAES
+            ===================================================== */
+            { id: 87, name: "Hot Chocolate Fudge", category: "sundaes", type: "veg", price: 129, image: "/assets/menu/sundaes/hot-chocolate-fudge.png" },
+            { id: 88, name: "Death By Chocolate (DBC)", category: "sundaes", type: "veg", price: 149, image: "/assets/menu/sundaes/death-by-chocolate.png" },
+            { id: 89, name: "Banana Split Sundae", category: "sundaes", type: "veg", price: 159, image: "/assets/menu/sundaes/banana-split-sundae.png" },
+            { id: 90, name: "Lychee Love Sundae", category: "sundaes", type: "veg", price: 139, image: "/assets/menu/sundaes/lychee-love-sundae.png" },
+            { id: 91, name: "Ice Cream with Jelly", category: "sundaes", type: "veg", price: 149, image: "/assets/menu/sundaes/ice-cream-with-jelly.png" },
+            { id: 92, name: "Banana Royal Sundae", category: "sundaes", type: "veg", price: 149, image: "/assets/menu/sundaes/banana-royal-sundae.png" },
+            { id: 93, name: "Oreo Cookie Sundae", category: "sundaes", type: "veg", price: 149, image: "/assets/menu/sundaes/oreo-cookie-sundae.png" },
+            { id: 94, name: "Brown Bomb", category: "sundaes", type: "veg", price: 159, image: "/assets/menu/sundaes/brown-bomb.png" },
+            { id: 95, name: "Dry Fruit Special", category: "sundaes", type: "veg", price: 159, image: "/assets/menu/sundaes/dry-fruit-special.png" },
+            { id: 96, name: "Gudbud Sundae", category: "sundaes", type: "veg", price: 159, image: "/assets/menu/sundaes/gudbud-sundae.png" },
+
+            /* =====================================================
+            NON-VEG: CHICKEN BURGERS
+            ===================================================== */
+            { id: 97, name: "Chicken Burger", category: "burgers", type: "non-veg", price: 79, image: "/assets/menu/non-veg/burger/chicken-burger.png" },
+            { id: 98, name: "Chicken Burger Jumbo", category: "burgers", type: "non-veg", price: 89, image: "/assets/menu/non-veg/burger/chicken-burger-jumbo.png" },
+            { id: 99, name: "Chicken Burger Premium", category: "burgers", type: "non-veg", price: 99, image: "/assets/menu/non-veg/burger/chicken-burger-premium.png" },
+            { id: 100, name: "Desi Rich Makhni Chicken Burger", category: "burgers", type: "non-veg", price: 149, image: "/assets/menu/non-veg/burger/desi-rich-makhni-chicken-burger.png" },
+            { id: 101, name: "Spicy Barbeque Chicken Burger", category: "burgers", type: "non-veg", price: 149, image: "/assets/menu/non-veg/burger/spicy-barbeque-chicken-burger.png" },
+            { id: 102, name: "Mexican Chicken Burger", category: "burgers", type: "non-veg", price: 149, image: "/assets/menu/non-veg/burger/mexican-chicken-burger.png" },
+            { id: 103, name: "Peri Peri Chicken Burger", category: "burgers", type: "non-veg", price: 149, image: "/assets/menu/non-veg/burger/peri-peri-chicken-burger.png" },
+            { id: 104, name: "Spicy Smoky Tandoori Chicken Burger", category: "burgers", type: "non-veg", price: 149, image: "/assets/menu/non-veg/burger/spicy-smoky-tandoori-chicken-burger.png" },
+            { id: 105, name: "Smoky Tandoori Chicken Tower Burger", category: "burgers", type: "non-veg", price: 199, image: "/assets/menu/non-veg/burger/smoky-tandoori-chicken-tower-burger.png" },
+            { id: 106, name: "Hot & Spicy Peri Peri Chicken Zinger Burger", category: "burgers", type: "non-veg", price: 249, image: "/assets/menu/non-veg/burger/peri-peri-chicken-zinger-burger.png" },
+
+            /* =====================================================
+            NON-VEG: CHICKEN WRAPS
+            ===================================================== */
+            { id: 107, name: "Chicken Smoke Tandoor Wrap", category: "wraps", type: "non-veg", price: 99, image: "/assets/menu/non-veg/wrap/chicken-smoke-tandoor-wrap.png" },
+            { id: 108, name: "Desi Chicken Wrap", category: "wraps", type: "non-veg", price: 99, image: "/assets/menu/non-veg/wrap/desi-chicken-wrap.png" },
+            { id: 109, name: "Mexican Chicken Wrap", category: "wraps", type: "non-veg", price: 99, image: "/assets/menu/non-veg/wrap/mexican-chicken-wrap.png" },
+            { id: 110, name: "Peri Peri Chicken Wrap", category: "wraps", type: "non-veg", price: 99, image: "/assets/menu/non-veg/wrap/peri-peri-chicken-wrap.png" },
+            { id: 111, name: "Chicken Cheese Wrap", category: "wraps", type: "non-veg", price: 109, image: "/assets/menu/non-veg/wrap/chicken-cheese-wrap.png" },
+
+            /* =====================================================
+            NON-VEG: CHICKEN SANDWICHES
+            ===================================================== */
+            { id: 112, name: "Chicken Smoke Tandoor Sandwich", category: "sandwiches", type: "non-veg", price: 99, image: "/assets/menu/non-veg/sandwich/chicken-smoke-tandoor-sandwich.png" },
+            { id: 113, name: "Desi Chicken Sandwich", category: "sandwiches", type: "non-veg", price: 99, image: "/assets/menu/non-veg/sandwich/desi-chicken-sandwich.png" },
+            { id: 114, name: "Mexican Chicken Sandwich", category: "sandwiches", type: "non-veg", price: 99, image: "/assets/menu/non-veg/sandwich/mexican-chicken-sandwich.png" },
+            { id: 115, name: "Peri Peri Chicken Sandwich", category: "sandwiches", type: "non-veg", price: 99, image: "/assets/menu/non-veg/sandwich/peri-peri-chicken-sandwich.png" },
+            { id: 116, name: "Chicken Cheese Sandwich", category: "sandwiches", type: "non-veg", price: 109, image: "/assets/menu/non-veg/sandwich/chicken-cheese-sandwich.png" },
+            { id: 117, name: "Triple Layer Chicken Sandwich", category: "sandwiches", type: "non-veg", price: 169, image: "/assets/menu/non-veg/sandwich/triple-layer-chicken-sandwich.png" },
+
+            /* =====================================================
+            NON-VEG: CRISPY FRIED CHICKEN
+            ===================================================== */
+            { id: 118, name: "Spicy Chicken Snacker", category: "fried-chicken", type: "non-veg", price: 69, quantity: "5 pcs", image: "/assets/menu/non-veg/fried-chicken/spicy-chicken-snacker.png" },
+            { id: 119, name: "Spicy Wings", category: "fried-chicken", type: "non-veg", price: 69, quantity: "2 pcs", image: "/assets/menu/non-veg/fried-chicken/spicy-wings.png" },
+            { id: 120, name: "Fried Chicken Popcorn", category: "fried-chicken", type: "non-veg", price: 79, quantity: "10 pcs", image: "/assets/menu/non-veg/fried-chicken/fried-chicken-popcorn.png" },
+            { id: 121, name: "Barbeque Wings", category: "fried-chicken", type: "non-veg", price: 79, quantity: "2 pcs", image: "/assets/menu/non-veg/fried-chicken/barbeque-wings.png" },
+            { id: 122, name: "Chicken Whole Wings", category: "fried-chicken", type: "non-veg", price: 69, quantity: "1 pc", image: "/assets/menu/non-veg/fried-chicken/chicken-whole-wings.png" },
+            { id: 123, name: "Chicken Drumsticks", category: "fried-chicken", type: "non-veg", price: 79, quantity: "1 pc", image: "/assets/menu/non-veg/fried-chicken/chicken-drumsticks.png" },
+            { id: 124, name: "Boneless Breast", category: "fried-chicken", type: "non-veg", price: 99, quantity: "2 pcs", image: "/assets/menu/non-veg/fried-chicken/boneless-breast.png" },
+            { id: 125, name: "Mini Bucket", category: "fried-chicken", type: "non-veg", price: 209, quantity: "3 pcs", image: "/assets/menu/non-veg/fried-chicken/mini-bucket.png" },
+            { id: 126, name: "Medium Bucket", category: "fried-chicken", type: "non-veg", price: 339, quantity: "5 pcs", image: "/assets/menu/non-veg/fried-chicken/medium-bucket.png" },
+            { id: 127, name: "Jumbo Bucket", category: "fried-chicken", type: "non-veg", price: 749, quantity: "10 pcs", image: "/assets/menu/non-veg/fried-chicken/jumbo-bucket.png" },
+
+            /* =====================================================
+            NON-VEG: CHICKEN ROLLS & SAMOSA
+            ===================================================== */
+            { id: 128, name: "Chicken Samosa", category: "samosa", type: "non-veg", price: 79, quantity: "3 pcs", image: "/assets/menu/non-veg/samosa/chicken-samosa.png" },
+            { id: 129, name: "Chicken Roll", category: "rolls", type: "non-veg", price: 79, quantity: "3 pcs", image: "/assets/menu/non-veg/rolls/chicken-roll.png" },
+            { id: 130, name: "Chicken Spring Roll", category: "rolls", type: "non-veg", price: 79, quantity: "3 pcs", image: "/assets/menu/non-veg/rolls/chicken-spring-roll.png" },
+
+            /* =====================================================
+            NON-VEG: CHICKEN SNACKS
+            ===================================================== */
+            { id: 131, name: "Chicken Nuggets", category: "snacks", type: "non-veg", price: 79, quantity: "5 pcs", image: "/assets/menu/non-veg/snacks/chicken-nuggets.png" },
+            { id: 132, name: "Chicken Nachos", category: "snacks", type: "non-veg", price: 79, quantity: "5 pcs", image: "/assets/menu/non-veg/snacks/chicken-nachos.png" },
+            { id: 133, name: "Chicken Breast Strips", category: "snacks", type: "non-veg", price: 79, quantity: "3 pcs", image: "/assets/menu/non-veg/snacks/chicken-breast-strips.png" },
+            { id: 134, name: "Chicken Garlic Fingers", category: "snacks", type: "non-veg", price: 79, quantity: "5 pcs", image: "/assets/menu/non-veg/snacks/chicken-garlic-fingers.png" },
+            { id: 135, name: "Chicken Popcorn", category: "snacks", type: "non-veg", price: 79, quantity: "10 pcs", image: "/assets/menu/non-veg/snacks/chicken-popcorn.png" },
+            { id: 136, name: "Chicken Fries", category: "snacks", type: "non-veg", price: 79, quantity: "10 pcs", image: "/assets/menu/non-veg/snacks/chicken-fries.png" },
+            { id: 137, name: "Chicken Cheese Mini Qiwis", category: "snacks", type: "non-veg", price: 79, quantity: "4 pcs", image: "/assets/menu/non-veg/snacks/chicken-cheese-mini-qiwis.png" },
+
+            /* =====================================================
+            NON-VEG: CHICKEN MOMOS
+            ===================================================== */
+            { id: 138, name: "Chicken Momos", category: "momos", type: "non-veg", price: 79, image: "/assets/menu/non-veg/momos/chicken-momos.png" },
+            { id: 139, name: "Chicken Schezwan Momos", category: "momos", type: "non-veg", price: 79, image: "/assets/menu/non-veg/momos/chicken-schezwan-momos.png" },
+            { id: 140, name: "Chicken Tikka Momos", category: "momos", type: "non-veg", price: 89, image: "/assets/menu/non-veg/momos/chicken-tikka-momos.png" },
+            { id: 141, name: "Chicken Cheese Momos", category: "momos", type: "non-veg", price: 89, image: "/assets/menu/non-veg/momos/chicken-cheese-momos.png" },
+            { id: 142, name: "Chicken Barbeque Momos", category: "momos", type: "non-veg", price: 89, image: "/assets/menu/non-veg/momos/chicken-barbeque-momos.png" },
+            { id: 143, name: "Butter Chicken Momos", category: "momos", type: "non-veg", price: 89, image: "/assets/menu/non-veg/momos/butter-chicken-momos.png" },
+            { id: 144, name: "Chicken Momosa", category: "momos", type: "non-veg", price: 79, quantity: "2 pcs", image: "/assets/menu/non-veg/momos/chicken-momosa.png" },
+            { id: 145, name: "Chicken Cheese Burst Momosa", category: "momos", type: "non-veg", price: 89, quantity: "2 pcs", image: "/assets/menu/non-veg/momos/chicken-cheese-burst-momosa.png" },
+
+            /* =====================================================
+            NON-VEG: CHICKEN COMBOS
+            ===================================================== */
+            { id: 146, name: "Chicken Mingles Combo", category: "combos", type: "non-veg", price: 199, quantity: "14 pcs", image: "/assets/menu/non-veg/combos/chicken-mingles-combo.png" },
+            { id: 147, name: "Chicken Momos Combo", category: "combos", type: "non-veg", price: 249, quantity: "15 pcs", image: "/assets/menu/non-veg/combos/chicken-momos-combo.png" },
+            { id: 148, name: "Chicken Burger + Fries + Coke", category: "combos", type: "non-veg", price: 149, image: "/assets/menu/non-veg/combos/chicken-burger-fries-coke.png" },
+            { id: 149, name: "Premium Chicken Burger + Fries + Coke", category: "combos", type: "non-veg", price: 179, image: "/assets/menu/non-veg/combos/premium-chicken-burger-fries-coke.png" },
+            { id: 150, name: "Chicken Wrap + Fries + Coke", category: "combos", type: "non-veg", price: 159, image: "/assets/menu/non-veg/combos/chicken-wrap-fries-coke.png" },
+            { id: 151, name: "Chicken Sandwich + Fries + Coke", category: "combos", type: "non-veg", price: 169, image: "/assets/menu/non-veg/combos/chicken-sandwich-fries-coke.png" },
+            { id: 152, name: "Royal Chicken Burger + Fries + Coke", category: "combos", type: "non-veg", price: 209, image: "/assets/menu/non-veg/combos/royal-chicken-burger-fries-coke.png" },
+
+            /* =====================================================
+            NON-VEG: CHICKEN PIZZA
+            ===================================================== */
+            { id: 153, name: "Chicken Salami Pizza", category: "pizza", type: "non-veg", price: 179, priceLarge: 349, image: "/assets/menu/non-veg/pizza/chicken-salami-pizza.png" },
+            { id: 154, name: "Chicago Style Pizza", category: "pizza", type: "non-veg", price: 179, priceLarge: 349, image: "/assets/menu/non-veg/pizza/chicago-style-pizza.png" },
+            { id: 155, name: "Chicken Tandoori Pizza", category: "pizza", type: "non-veg", price: 199, priceLarge: 379, image: "/assets/menu/non-veg/pizza/chicken-tandoori-pizza.png" },
+            { id: 156, name: "Chicken & Mushroom Pizza", category: "pizza", type: "non-veg", price: 199, priceLarge: 379, image: "/assets/menu/non-veg/pizza/chicken-mushroom-pizza.png" },
+            { id: 157, name: "Chicken Fried Popcorn Pizza", category: "pizza", type: "non-veg", price: 199, priceLarge: 379, image: "/assets/menu/non-veg/pizza/chicken-fried-popcorn-pizza.png" },
+            { id: 158, name: "Chicken Momos Pizza", category: "pizza", type: "non-veg", price: 229, priceLarge: 399, image: "/assets/menu/non-veg/pizza/chicken-momos-pizza.png" },
+
+            /* =====================================================
+            NON-VEG: GARLIC BREADS
+            ===================================================== */
+            { id: 159, name: "Garlic Bread Chicken Regular", category: "garlic-bread", type: "non-veg", price: 139, quantity: "3 pcs", image: "/assets/menu/non-veg/garlic-bread/garlic-bread-chicken-regular.png" },
+            { id: 160, name: "Chicken Seekh Garlic Bread", category: "garlic-bread", type: "non-veg", price: 149, quantity: "3 pcs", image: "/assets/menu/non-veg/garlic-bread/chicken-seekh-garlic-bread.png" },
+            { id: 161, name: "Chicken Cheese Chilli Garlic Bread", category: "garlic-bread", type: "non-veg", price: 149, quantity: "3 pcs", image: "/assets/menu/non-veg/garlic-bread/chicken-cheese-chilli-garlic-bread.png" }
         ];
-
         // State Management
         let currentCategory = 'all';
         let currentFilters = {

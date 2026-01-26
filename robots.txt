@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://hungers-junktion.alphazero.in/sitemap.xml
+Sitemap: https://hunger-junktion.alphazero.in/sitemap.xml

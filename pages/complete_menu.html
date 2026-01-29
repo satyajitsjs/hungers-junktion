@@ -96,6 +96,24 @@
   }
   </script>
 
+  <script>
+  const categoryButtons = document.querySelectorAll('.category-btn');
+
+  categoryButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      // remove active from all buttons
+      categoryButtons.forEach(btn => btn.classList.remove('active'));
+
+      // add active to clicked button
+      button.classList.add('active');
+
+      // optional: get selected category
+      const category = button.dataset.category;
+      console.log('Selected category:', category);
+    });
+  });
+</script>
+
   <!-- Styles -->
   <link rel="stylesheet" href="../css/main.css" />
 

@@ -26,7 +26,7 @@
   <!-- Canonical -->
   <link
     rel="canonical"
-    href="https://hunger-junktion.alphazero.in/pages/order_online.html"
+    href="https://www.hungerjunktion.com/pages/order_online.html"
   />
 
   <!-- Open Graph -->
@@ -34,7 +34,7 @@
   <meta property="og:site_name" content="Hunger Junktion" />
   <meta
     property="og:url"
-    content="https://hunger-junktion.alphazero.in/pages/order_online.html"
+    content="https://www.hungerjunktion.com/pages/order_online.html"
   />
   <meta
     property="og:title"
@@ -46,7 +46,7 @@
   />
   <meta
     property="og:image"
-    content="https://hunger-junktion.alphazero.in/assets/seo/order-og.jpg"
+    content="https://www.hungerjunktion.com/assets/seo/order-og.jpg"
   />
 
   <!-- Twitter -->
@@ -61,7 +61,7 @@
   />
   <meta
     name="twitter:image"
-    content="https://hunger-junktion.alphazero.in/assets/seo/order-og.jpg"
+    content="https://www.hungerjunktion.com/assets/seo/order-og.jpg"
   />
 
   <!-- Theme -->
@@ -84,9 +84,9 @@
     "@context": "https://schema.org",
     "@type": "FoodEstablishment",
     "name": "Hunger Junktion",
-    "url": "https://hunger-junktion.alphazero.in/",
+    "url": "https://www.hungerjunktion.com/",
     "acceptsReservations": false,
-    "hasMenu": "https://hunger-junktion.alphazero.in/pages/complete_menu.html",
+    "hasMenu": "https://www.hungerjunktion.com/pages/complete_menu.html",
     "potentialAction": {
       "@type": "OrderAction",
       "target": [
@@ -114,7 +114,7 @@
                         <path d="M24 14C19.5817 14 16 17.5817 16 22C16 26.4183 19.5817 30 24 30C28.4183 30 32 26.4183 32 22C32 17.5817 28.4183 14 24 14Z" fill="#1A1A1A"/>
                         <circle cx="24" cy="22" r="3" fill="#FF4500"/>
                     </svg> -->
-                    <img src="https://hunger-junktion.alphazero.in/assets/logo.png" alt="" style="width: 40px; height: 60px;">
+                    <img src="https://www.hungerjunktion.com/assets/logo.png" alt="" style="width: 40px; height: 60px;">
 
                     <div class="flex flex-col">
                         <span class="font-headline text-xl font-bold text-gradient-accent">HUNGER'S</span>
@@ -319,35 +319,11 @@
                         <!-- Saved Addresses -->
                         <div>
                             <label class="font-body text-sm text-text-secondary mb-3 block">Saved Addresses</label>
-                            <div class="space-y-2">
-                                <button class="saved-address-btn w-full text-left p-4 rounded-lg bg-surface hover:bg-surface-light transition-colors border border-primary-700 hover:border-accent">
-                                    <div class="flex items-start gap-3">
-                                        <svg width="20" height="20" fill="none" stroke="#FF4500" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="flex-shrink-0 mt-0.5">
-                                            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
-                                            <polyline points="9 22 9 12 15 12 15 22"></polyline>
-                                        </svg>
-                                        <div class="flex-1">
-                                            <div class="font-body text-sm font-medium mb-1">Home</div>
-                                            <div class="font-body text-xs text-text-secondary">123 Food Street, Andheri West, Mumbai - 400058</div>
-                                        </div>
-                                    </div>
-                                </button>
-                                <button class="saved-address-btn w-full text-left p-4 rounded-lg bg-surface hover:bg-surface-light transition-colors border border-primary-700 hover:border-accent">
-                                    <div class="flex items-start gap-3">
-                                        <svg width="20" height="20" fill="none" stroke="#F59E0B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="flex-shrink-0 mt-0.5">
-                                            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
-                                            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
-                                        </svg>
-                                        <div class="flex-1">
-                                            <div class="font-body text-sm font-medium mb-1">Office</div>
-                                            <div class="font-body text-xs text-text-secondary">456 Business Park, Bandra Kurla Complex, Mumbai - 400051</div>
-                                        </div>
-                                    </div>
-                                </button>
-                            </div>
+                            <div id="savedAddressList" class="space-y-2"></div>
+                            <p id="noSavedAddresses" class="font-body text-xs text-text-secondary mt-2">No saved addresses yet.</p>
                         </div>
 
-                        <button class="btn-secondary w-full flex items-center justify-center gap-2">
+                        <button id="addAddressBtn" class="btn-secondary w-full flex items-center justify-center gap-2">
                             <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <line x1="12" y1="5" x2="12" y2="19"></line>
                                 <line x1="5" y1="12" x2="19" y2="12"></line>
@@ -368,27 +344,11 @@
                                     <circle cx="12" cy="10" r="3"></circle>
                                 </svg>
                                 <div class="flex-1">
-                                    <div class="font-body text-sm font-medium mb-1">Andheri West Branch</div>
-                                    <div class="font-body text-xs text-text-secondary mb-2">123 Food Street, Andheri West, Mumbai - 400058</div>
+                                    <div class="font-body text-sm font-medium mb-1">Bethel Street Branch</div>
+                                    <div class="font-body text-xs text-text-secondary mb-2">Hunger Junktion, Bethel Street, Near Bethel India Mission School, Kumbalgodu, Bangalore - 560074</div>
                                     <div class="flex items-center gap-4 text-xs">
                                         <span class="text-success-500">Open Now</span>
-                                        <span class="text-text-secondary">10:00 AM - 11:00 PM</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </button>
-                        <button class="pickup-location-btn w-full text-left p-4 rounded-lg bg-surface hover:bg-surface-light transition-colors border border-primary-700 hover:border-accent">
-                            <div class="flex items-start gap-3">
-                                <svg width="20" height="20" fill="none" stroke="#22C55E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="flex-shrink-0 mt-0.5">
-                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                                    <circle cx="12" cy="10" r="3"></circle>
-                                </svg>
-                                <div class="flex-1">
-                                    <div class="font-body text-sm font-medium mb-1">Bandra Branch</div>
-                                    <div class="font-body text-xs text-text-secondary mb-2">789 Linking Road, Bandra West, Mumbai - 400050</div>
-                                    <div class="flex items-center gap-4 text-xs">
-                                        <span class="text-success-500">Open Now</span>
-                                        <span class="text-text-secondary">10:00 AM - 11:00 PM</span>
+                                        <span class="text-text-secondary">11:00 AM - 11:00 PM</span>
                                     </div>
                                 </div>
                             </div>
@@ -460,380 +420,7 @@
     <section class="py-12 bg-background-light">
         <div class="container mx-auto px-4 lg:px-8">
             <div class="max-w-6xl mx-auto">
-                <!-- Category: Burgers -->
-                <div class="menu-category mb-12">
-                    <div class="flex items-center justify-between mb-6">
-                        <h2 class="font-headline text-3xl font-bold">Burgers</h2>
-                        <a href="complete_menu.html" class="font-body text-sm text-accent hover:text-accent-400 transition-colors flex items-center gap-2">
-                            View All
-                            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <line x1="5" y1="12" x2="19" y2="12"></line>
-                                <polyline points="12 5 19 12 12 19"></polyline>
-                            </svg>
-                        </a>
-                    </div>
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                        <!-- Menu Item 1 -->
-                        <div class="menu-item card-dramatic overflow-hidden group hover-lift" data-category="burger" data-type="non-veg" data-price="349">
-                            <div class="aspect-[4/3] overflow-hidden relative">
-                                <img src="https://img.rocket.new/generatedImages/rocket_gen_img_1b56a8fff-1765782563885.png" 
-                                     alt="Signature Flame Burger with double beef patty, melted cheddar cheese, crispy bacon, and special flame sauce" 
-                                     class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                                     loading="lazy"
-                                     onerror="this.src='https://images.unsplash.com/photo-1550547660-d9450f859349?q=80&w=800&auto=format&fit=crop'; this.onerror=null;">
-                                <div class="absolute top-3 left-3">
-                                    <span class="inline-flex items-center gap-1 bg-error-900/90 backdrop-blur-premium text-error-400 px-3 py-1 rounded-full text-xs font-medium border border-error-700/30">
-                                        <span class="w-2 h-2 bg-error-500 rounded-full"></span>
-                                        Non-Veg
-                                    </span>
-                                </div>
-                                <div class="absolute top-3 right-3">
-                                    <span class="inline-flex items-center gap-1 bg-background/90 backdrop-blur-premium text-warning-400 px-3 py-1 rounded-full text-xs font-medium">
-                                        <svg width="12" height="12" fill="currentColor" viewBox="0 0 24 24">
-                                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                                        </svg>
-                                        4.9
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="p-5">
-                                <h3 class="font-headline text-xl font-bold mb-2">Signature Flame Burger</h3>
-                                <p class="font-body text-sm text-text-secondary mb-4 line-clamp-2">Double beef patty with melted cheddar, crispy bacon, and our secret flame sauce</p>
-                                <div class="flex items-center justify-between">
-                                    <span class="font-headline text-2xl font-bold text-accent">₹349</span>
-                                    <button class="add-to-cart-btn btn-primary text-sm px-4 py-2 flex items-center gap-2" data-id="1" data-name="Signature Flame Burger" data-price="349" data-image="https://images.pexels.com/photos/1639557/pexels-photo-1639557.jpeg?auto=compress&cs=tinysrgb&w=800">
-                                        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                            <line x1="12" y1="5" x2="12" y2="19"></line>
-                                            <line x1="5" y1="12" x2="19" y2="12"></line>
-                                        </svg>
-                                        Add
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Menu Item 2 -->
-                        <div class="menu-item card-dramatic overflow-hidden group hover-lift" data-category="burger" data-type="veg" data-price="279">
-                            <div class="aspect-[4/3] overflow-hidden relative">
-                                <img src="https://images.unsplash.com/photo-1641601905519-70554cb7b8c1" 
-                                     alt="Veggie Supreme Burger with grilled vegetables, fresh lettuce, tomato, and herb mayo" 
-                                     class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                                     loading="lazy"
-                                     onerror="this.src='https://images.pexels.com/photos/1639565/pexels-photo-1639565.jpeg?auto=compress&cs=tinysrgb&w=800'; this.onerror=null;">
-                                <div class="absolute top-3 left-3">
-                                    <span class="inline-flex items-center gap-1 bg-success-900/90 backdrop-blur-premium text-success-400 px-3 py-1 rounded-full text-xs font-medium border border-success-700/30">
-                                        <span class="w-2 h-2 bg-success-500 rounded-full"></span>
-                                        Veg
-                                    </span>
-                                </div>
-                                <div class="absolute top-3 right-3">
-                                    <span class="inline-flex items-center gap-1 bg-background/90 backdrop-blur-premium text-warning-400 px-3 py-1 rounded-full text-xs font-medium">
-                                        <svg width="12" height="12" fill="currentColor" viewBox="0 0 24 24">
-                                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                                        </svg>
-                                        4.7
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="p-5">
-                                <h3 class="font-headline text-xl font-bold mb-2">Veggie Supreme Burger</h3>
-                                <p class="font-body text-sm text-text-secondary mb-4 line-clamp-2">Grilled vegetables with fresh lettuce, tomato, and herb mayo on a toasted bun</p>
-                                <div class="flex items-center justify-between">
-                                    <span class="font-headline text-2xl font-bold text-accent">₹279</span>
-                                    <button class="add-to-cart-btn btn-primary text-sm px-4 py-2 flex items-center gap-2" data-id="2" data-name="Veggie Supreme Burger" data-price="279" data-image="https://images.unsplash.com/photo-1520072959219-c595dc870360?q=80&w=800&auto=format&fit=crop">
-                                        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                            <line x1="12" y1="5" x2="12" y2="19"></line>
-                                            <line x1="5" y1="12" x2="19" y2="12"></line>
-                                        </svg>
-                                        Add
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Menu Item 3 -->
-                        <div class="menu-item card-dramatic overflow-hidden group hover-lift" data-category="burger" data-type="non-veg" data-price="399">
-                            <div class="aspect-[4/3] overflow-hidden relative">
-                                <img src="https://images.unsplash.com/photo-1734773343286-99e5068b175b" 
-                                     alt="Spicy Chicken Burger with crispy fried chicken, jalapeños, pepper jack cheese, and chipotle mayo" 
-                                     class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                                     loading="lazy"
-                                     onerror="this.src='https://images.pexels.com/photos/1639562/pexels-photo-1639562.jpeg?auto=compress&cs=tinysrgb&w=800'; this.onerror=null;">
-                                <div class="absolute top-3 left-3">
-                                    <span class="inline-flex items-center gap-1 bg-error-900/90 backdrop-blur-premium text-error-400 px-3 py-1 rounded-full text-xs font-medium border border-error-700/30">
-                                        <span class="w-2 h-2 bg-error-500 rounded-full"></span>
-                                        Non-Veg
-                                    </span>
-                                </div>
-                                <div class="absolute top-3 right-3 flex gap-2">
-                                    <span class="inline-flex items-center gap-1 bg-background/90 backdrop-blur-premium text-warning-400 px-3 py-1 rounded-full text-xs font-medium">
-                                        <svg width="12" height="12" fill="currentColor" viewBox="0 0 24 24">
-                                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                                        </svg>
-                                        4.8
-                                    </span>
-                                    <span class="inline-flex items-center gap-1 bg-error-900/90 backdrop-blur-premium text-error-400 px-3 py-1 rounded-full text-xs font-medium">
-                                        🌶️ Spicy
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="p-5">
-                                <h3 class="font-headline text-xl font-bold mb-2">Spicy Chicken Burger</h3>
-                                <p class="font-body text-sm text-text-secondary mb-4 line-clamp-2">Crispy fried chicken with jalapeños, pepper jack cheese, and chipotle mayo</p>
-                                <div class="flex items-center justify-between">
-                                    <span class="font-headline text-2xl font-bold text-accent">₹399</span>
-                                    <button class="add-to-cart-btn btn-primary text-sm px-4 py-2 flex items-center gap-2" data-id="3" data-name="Spicy Chicken Burger" data-price="399" data-image="https://images.pixabay.com/photo/2016/03/05/19/02/hamburger-1238246_1280.jpg">
-                                        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                            <line x1="12" y1="5" x2="12" y2="19"></line>
-                                            <line x1="5" y1="12" x2="19" y2="12"></line>
-                                        </svg>
-                                        Add
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Category: Pizza -->
-                <div class="menu-category mb-12">
-                    <div class="flex items-center justify-between mb-6">
-                        <h2 class="font-headline text-3xl font-bold">Pizza</h2>
-                        <a href="complete_menu.html" class="font-body text-sm text-accent hover:text-accent-400 transition-colors flex items-center gap-2">
-                            View All
-                            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <line x1="5" y1="12" x2="19" y2="12"></line>
-                                <polyline points="12 5 19 12 12 19"></polyline>
-                            </svg>
-                        </a>
-                    </div>
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                        <!-- Menu Item 4 -->
-                        <div class="menu-item card-dramatic overflow-hidden group hover-lift" data-category="pizza" data-type="veg" data-price="299">
-                            <div class="aspect-[4/3] overflow-hidden relative">
-                                <img src="https://images.unsplash.com/photo-1703784022146-b72677752ce5" 
-                                     alt="Margherita Supreme pizza with fresh mozzarella, basil, and tomato sauce on thin crust" 
-                                     class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                                     loading="lazy"
-                                     onerror="this.src='https://img.rocket.new/generatedImages/rocket_gen_img_1e643e358-1768163106792.png'; this.onerror=null;">
-                                <div class="absolute top-3 left-3">
-                                    <span class="inline-flex items-center gap-1 bg-success-900/90 backdrop-blur-premium text-success-400 px-3 py-1 rounded-full text-xs font-medium border border-success-700/30">
-                                        <span class="w-2 h-2 bg-success-500 rounded-full"></span>
-                                        Veg
-                                    </span>
-                                </div>
-                                <div class="absolute top-3 right-3">
-                                    <span class="inline-flex items-center gap-1 bg-background/90 backdrop-blur-premium text-warning-400 px-3 py-1 rounded-full text-xs font-medium">
-                                        <svg width="12" height="12" fill="currentColor" viewBox="0 0 24 24">
-                                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                                        </svg>
-                                        4.8
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="p-5">
-                                <h3 class="font-headline text-xl font-bold mb-2">Margherita Supreme</h3>
-                                <p class="font-body text-sm text-text-secondary mb-4 line-clamp-2">Hand-tossed thin crust with fresh mozzarella, vine-ripened tomatoes, and basil</p>
-                                <div class="flex items-center justify-between">
-                                    <span class="font-headline text-2xl font-bold text-accent">₹299</span>
-                                    <button class="add-to-cart-btn btn-primary text-sm px-4 py-2 flex items-center gap-2" data-id="4" data-name="Margherita Supreme" data-price="299" data-image="https://images.pixabay.com/photo/2020/06/08/16/49/pizza-5275191_1280.jpg">
-                                        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                            <line x1="12" y1="5" x2="12" y2="19"></line>
-                                            <line x1="5" y1="12" x2="19" y2="12"></line>
-                                        </svg>
-                                        Add
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Menu Item 5 -->
-                        <div class="menu-item card-dramatic overflow-hidden group hover-lift" data-category="pizza" data-type="non-veg" data-price="449">
-                            <div class="aspect-[4/3] overflow-hidden relative">
-                                <img src="https://images.unsplash.com/photo-1717049955368-abce63945ee0" 
-                                     alt="Meat Lovers pizza with pepperoni, sausage, bacon, and ham on thick crust" 
-                                     class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                                     loading="lazy"
-                                     onerror="this.src='https://images.pexels.com/photos/315755/pexels-photo-315755.jpeg?auto=compress&cs=tinysrgb&w=800'; this.onerror=null;">
-                                <div class="absolute top-3 left-3">
-                                    <span class="inline-flex items-center gap-1 bg-error-900/90 backdrop-blur-premium text-error-400 px-3 py-1 rounded-full text-xs font-medium border border-error-700/30">
-                                        <span class="w-2 h-2 bg-error-500 rounded-full"></span>
-                                        Non-Veg
-                                    </span>
-                                </div>
-                                <div class="absolute top-3 right-3">
-                                    <span class="inline-flex items-center gap-1 bg-background/90 backdrop-blur-premium text-warning-400 px-3 py-1 rounded-full text-xs font-medium">
-                                        <svg width="12" height="12" fill="currentColor" viewBox="0 0 24 24">
-                                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                                        </svg>
-                                        4.9
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="p-5">
-                                <h3 class="font-headline text-xl font-bold mb-2">Meat Lovers</h3>
-                                <p class="font-body text-sm text-text-secondary mb-4 line-clamp-2">Loaded with pepperoni, sausage, bacon, and ham on our signature thick crust</p>
-                                <div class="flex items-center justify-between">
-                                    <span class="font-headline text-2xl font-bold text-accent">₹449</span>
-                                    <button class="add-to-cart-btn btn-primary text-sm px-4 py-2 flex items-center gap-2" data-id="5" data-name="Meat Lovers" data-price="449" data-image="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?q=80&w=800&auto=format&fit=crop">
-                                        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                            <line x1="12" y1="5" x2="12" y2="19"></line>
-                                            <line x1="5" y1="12" x2="19" y2="12"></line>
-                                        </svg>
-                                        Add
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Menu Item 6 -->
-                        <div class="menu-item card-dramatic overflow-hidden group hover-lift" data-category="pizza" data-type="veg" data-price="349">
-                            <div class="aspect-[4/3] overflow-hidden relative">
-                                <img src="https://images.pexels.com/photos/2147491/pexels-photo-2147491.jpeg?auto=compress&cs=tinysrgb&w=800" 
-                                     alt="Veggie Delight pizza with bell peppers, mushrooms, olives, onions, and corn" 
-                                     class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                                     loading="lazy"
-                                     onerror="this.src='https://images.pixabay.com/photo/2017/12/09/08/18/pizza-3007395_1280.jpg'; this.onerror=null;">
-                                <div class="absolute top-3 left-3">
-                                    <span class="inline-flex items-center gap-1 bg-success-900/90 backdrop-blur-premium text-success-400 px-3 py-1 rounded-full text-xs font-medium border border-success-700/30">
-                                        <span class="w-2 h-2 bg-success-500 rounded-full"></span>
-                                        Veg
-                                    </span>
-                                </div>
-                                <div class="absolute top-3 right-3">
-                                    <span class="inline-flex items-center gap-1 bg-background/90 backdrop-blur-premium text-warning-400 px-3 py-1 rounded-full text-xs font-medium">
-                                        <svg width="12" height="12" fill="currentColor" viewBox="0 0 24 24">
-                                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                                        </svg>
-                                        4.6
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="p-5">
-                                <h3 class="font-headline text-xl font-bold mb-2">Veggie Delight</h3>
-                                <p class="font-body text-sm text-text-secondary mb-4 line-clamp-2">Colorful mix of bell peppers, mushrooms, olives, onions, and sweet corn</p>
-                                <div class="flex items-center justify-between">
-                                    <span class="font-headline text-2xl font-bold text-accent">₹349</span>
-                                    <button class="add-to-cart-btn btn-primary text-sm px-4 py-2 flex items-center gap-2" data-id="6" data-name="Veggie Delight" data-price="349" data-image="https://images.pexels.com/photos/2147491/pexels-photo-2147491.jpeg?auto=compress&cs=tinysrgb&w=800">
-                                        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                            <line x1="12" y1="5" x2="12" y2="19"></line>
-                                            <line x1="5" y1="12" x2="19" y2="12"></line>
-                                        </svg>
-                                        Add
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Category: Sides -->
-                <div class="menu-category">
-                    <div class="flex items-center justify-between mb-6">
-                        <h2 class="font-headline text-3xl font-bold">Sides & Beverages</h2>
-                        <a href="complete_menu.html" class="font-body text-sm text-accent hover:text-accent-400 transition-colors flex items-center gap-2">
-                            View All
-                            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <line x1="5" y1="12" x2="19" y2="12"></line>
-                                <polyline points="12 5 19 12 12 19"></polyline>
-                            </svg>
-                        </a>
-                    </div>
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                        <!-- Menu Item 7 -->
-                        <div class="menu-item card-dramatic overflow-hidden group hover-lift" data-category="sides" data-type="veg" data-price="129">
-                            <div class="aspect-[4/3] overflow-hidden relative">
-                                <img src="https://images.unsplash.com/photo-1592484814267-7f7b019d0c9f" 
-                                     alt="Crispy golden french fries with sea salt and herbs" 
-                                     class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                                     loading="lazy"
-                                     onerror="this.src='https://images.unsplash.com/photo-1573080496219-bb080dd4f877?q=80&w=800&auto=format&fit=crop'; this.onerror=null;">
-                                <div class="absolute top-3 left-3">
-                                    <span class="inline-flex items-center gap-1 bg-success-900/90 backdrop-blur-premium text-success-400 px-3 py-1 rounded-full text-xs font-medium border border-success-700/30">
-                                        <span class="w-2 h-2 bg-success-500 rounded-full"></span>
-                                        Veg
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="p-5">
-                                <h3 class="font-headline text-xl font-bold mb-2">Crispy Fries</h3>
-                                <p class="font-body text-sm text-text-secondary mb-4 line-clamp-2">Golden french fries seasoned with sea salt and herbs</p>
-                                <div class="flex items-center justify-between">
-                                    <span class="font-headline text-2xl font-bold text-accent">₹129</span>
-                                    <button class="add-to-cart-btn btn-primary text-sm px-4 py-2 flex items-center gap-2" data-id="7" data-name="Crispy Fries" data-price="129" data-image="https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg?auto=compress&cs=tinysrgb&w=800">
-                                        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                            <line x1="12" y1="5" x2="12" y2="19"></line>
-                                            <line x1="5" y1="12" x2="19" y2="12"></line>
-                                        </svg>
-                                        Add
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Menu Item 8 -->
-                        <div class="menu-item card-dramatic overflow-hidden group hover-lift" data-category="beverages" data-type="veg" data-price="79">
-                            <div class="aspect-[4/3] overflow-hidden relative">
-                                <img src="https://images.unsplash.com/photo-1710588972117-f07645375ee3" 
-                                     alt="Refreshing cold cola with ice cubes and lemon slice" 
-                                     class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                                     loading="lazy"
-                                     onerror="this.src='https://images.pixabay.com/photo/2016/08/23/08/54/drinks-1614822_1280.jpg'; this.onerror=null;">
-                                <div class="absolute top-3 left-3">
-                                    <span class="inline-flex items-center gap-1 bg-success-900/90 backdrop-blur-premium text-success-400 px-3 py-1 rounded-full text-xs font-medium border border-success-700/30">
-                                        <span class="w-2 h-2 bg-success-500 rounded-full"></span>
-                                        Veg
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="p-5">
-                                <h3 class="font-headline text-xl font-bold mb-2">Cold Beverage</h3>
-                                <p class="font-body text-sm text-text-secondary mb-4 line-clamp-2">Refreshing cold drink to complement your meal</p>
-                                <div class="flex items-center justify-between">
-                                    <span class="font-headline text-2xl font-bold text-accent">₹79</span>
-                                    <button class="add-to-cart-btn btn-primary text-sm px-4 py-2 flex items-center gap-2" data-id="8" data-name="Cold Beverage" data-price="79" data-image="https://images.unsplash.com/photo-1546173159-315724a31696?q=80&w=800&auto=format&fit=crop">
-                                        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                            <line x1="12" y1="5" x2="12" y2="19"></line>
-                                            <line x1="5" y1="12" x2="19" y2="12"></line>
-                                        </svg>
-                                        Add
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Menu Item 9 -->
-                        <div class="menu-item card-dramatic overflow-hidden group hover-lift" data-category="sides" data-type="non-veg" data-price="199">
-                            <div class="aspect-[4/3] overflow-hidden relative">
-                                <img src="https://images.unsplash.com/photo-1608039755401-742074f0548d" 
-                                     alt="Crispy chicken wings with spicy buffalo sauce and ranch dip" 
-                                     class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                                     loading="lazy"
-                                     onerror="this.src='https://images.pexels.com/photos/60616/fried-chicken-chicken-fried-crunchy-60616.jpeg?auto=compress&cs=tinysrgb&w=800'; this.onerror=null;">
-                                <div class="absolute top-3 left-3">
-                                    <span class="inline-flex items-center gap-1 bg-error-900/90 backdrop-blur-premium text-error-400 px-3 py-1 rounded-full text-xs font-medium border border-error-700/30">
-                                        <span class="w-2 h-2 bg-error-500 rounded-full"></span>
-                                        Non-Veg
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="p-5">
-                                <h3 class="font-headline text-xl font-bold mb-2">Chicken Wings</h3>
-                                <p class="font-body text-sm text-text-secondary mb-4 line-clamp-2">Crispy wings tossed in buffalo sauce with ranch dip</p>
-                                <div class="flex items-center justify-between">
-                                    <span class="font-headline text-2xl font-bold text-accent">₹199</span>
-                                    <button class="add-to-cart-btn btn-primary text-sm px-4 py-2 flex items-center gap-2" data-id="9" data-name="Chicken Wings" data-price="199" data-image="https://images.pixabay.com/photo/2020/03/29/10/23/chicken-4980536_1280.jpg">
-                                        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                            <line x1="12" y1="5" x2="12" y2="19"></line>
-                                            <line x1="5" y1="12" x2="19" y2="12"></line>
-                                        </svg>
-                                        Add
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <div id="orderMenuSections" class="space-y-12"></div>
             </div>
         </div>
     </section>
@@ -952,6 +539,32 @@
 
     <!-- Cart Overlay -->
     <div id="cartOverlay" class="fixed inset-0 bg-background/80 backdrop-blur-premium z-40 hidden"></div>
+    <!-- Address Modal -->
+    <div id="addressModal" class="fixed inset-0 z-50 hidden items-center justify-center bg-background/80 backdrop-blur-premium p-4">
+        <div class="w-full max-w-lg bg-surface rounded-xl shadow-elevated border border-primary-700">
+            <div class="p-6 border-b border-primary-800 flex items-center justify-between">
+                <h3 class="font-headline text-xl font-bold">Save Delivery Address</h3>
+                <button id="closeAddressModal" class="p-2 hover:bg-surface-light rounded-lg transition-colors" aria-label="Close address modal">
+                    <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+            <div class="p-6 space-y-4">
+                <div>
+                    <label class="font-body text-sm text-text-secondary mb-2 block">Delivery Address</label>
+                    <textarea id="addressModalInput" rows="4" class="input-base w-full" placeholder="Enter your full delivery address"></textarea>
+                </div>
+                <p id="addressModalStatus" class="font-body text-xs text-text-secondary"></p>
+                <div class="flex flex-col sm:flex-row gap-3">
+                    <button id="useCurrentLocationBtn" class="btn-secondary flex-1">Use Current Location</button>
+                    <button id="saveAddressBtn" class="btn-primary flex-1">Save Address</button>
+                </div>
+                <button id="cancelAddressBtn" class="btn-ghost w-full">Cancel</button>
+            </div>
+        </div>
+    </div>
 
     <!-- Footer -->
     <footer class="bg-background-dark border-t border-primary-800 py-12 lg:py-16">
@@ -1058,7 +671,80 @@
     </footer>
 
     <!-- JavaScript -->
+    <script src="../assets/js/menu-data.js"></script>
+    <script src="../assets/js/menu-utils.js"></script>
     <script>
+        const menuData = HJMenu.normalizeMenuData(window.MENU_DATA);
+        const menuSections = document.getElementById('orderMenuSections');
+
+        function buildOrderMenuCard(item) {
+            const typeLabel = item.type === 'veg' ? 'Veg' : 'Non-Veg';
+            const typeBadgeClass = item.type === 'veg'
+                ? 'bg-success-900/90 text-success-400 border-success-700/30'
+                : 'bg-error-900/90 text-error-400 border-error-700/30';
+            const dotClass = item.type === 'veg' ? 'bg-success-500' : 'bg-error-500';
+            const meta = HJMenu.getItemMeta(item) || HJMenu.getCategoryLabel(item.category);
+
+            return `
+                <div class="menu-item card-dramatic overflow-hidden group hover-lift" data-category="${item.category}" data-type="${item.type}" data-price="${item.price}">
+                    <div class="aspect-[4/3] overflow-hidden relative">
+                        <img src="${item.image}"
+                             alt="${item.name}"
+                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                             loading="lazy"
+                             onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=800&auto=format&fit=crop'; this.onerror=null;">
+                        <div class="absolute top-3 left-3">
+                            <span class="inline-flex items-center gap-1 ${typeBadgeClass} backdrop-blur-premium px-3 py-1 rounded-full text-xs font-medium border">
+                                <span class="w-2 h-2 ${dotClass} rounded-full"></span>
+                                ${typeLabel}
+                            </span>
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-headline text-xl font-bold mb-2">${item.name}</h3>
+                        <p class="font-body text-sm text-text-secondary mb-4 line-clamp-2">${meta}</p>
+                        <div class="flex items-center justify-between">
+                            <span class="font-headline text-2xl font-bold text-accent">&#8377;${HJMenu.formatPrice(item.price)}</span>
+                            <button class="add-to-cart-btn btn-primary text-sm px-4 py-2 flex items-center gap-2" data-id="${item.id}" data-name="${item.name}" data-price="${item.price}" data-image="${item.image}">
+                                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                </svg>
+                                Add
+                            </button>
+                        </div>
+                    </div>
+                </div>`;
+        }
+
+        function renderOrderMenu() {
+            if (!menuSections) {
+                return;
+            }
+
+            menuSections.innerHTML = HJMenu.CATEGORY_ORDER.map((category) => {
+                const items = menuData.filter((item) => item.category === category);
+                if (items.length === 0) {
+                    return '';
+                }
+
+                const label = HJMenu.getCategoryLabel(category);
+
+                return `
+                    <div class="menu-category mb-12">
+                        <div class="flex items-center justify-between mb-6">
+                            <h2 class="font-headline text-3xl font-bold">${label}</h2>
+                            <span class="font-body text-sm text-text-secondary">${items.length} items</span>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                            ${items.map(buildOrderMenuCard).join('')}
+                        </div>
+                    </div>`;
+            }).join('');
+        }
+
+        renderOrderMenu();
+
         // Mobile Menu Toggle
         const mobileMenuBtn = document.getElementById('mobileMenuBtn');
         const mobileMenu = document.getElementById('mobileMenu');
@@ -1073,6 +759,270 @@
         const deliverySection = document.getElementById('deliverySection');
         const pickupSection = document.getElementById('pickupSection');
 
+        const addressSearch = document.getElementById('addressSearch');
+        const savedAddressList = document.getElementById('savedAddressList');
+        const noSavedAddresses = document.getElementById('noSavedAddresses');
+        const addAddressBtn = document.getElementById('addAddressBtn');
+        const addressModal = document.getElementById('addressModal');
+        const addressModalInput = document.getElementById('addressModalInput');
+        const addressModalStatus = document.getElementById('addressModalStatus');
+        const closeAddressModalBtn = document.getElementById('closeAddressModal');
+        const cancelAddressBtn = document.getElementById('cancelAddressBtn');
+        const saveAddressBtn = document.getElementById('saveAddressBtn');
+        const useCurrentLocationBtn = document.getElementById('useCurrentLocationBtn');
+        const pickupLocationButtons = document.querySelectorAll('.pickup-location-btn');
+        let selectedAddress = '';
+        let selectedPickup = '';
+        let savedAddresses = JSON.parse(localStorage.getItem('hj_saved_addresses') || '[]');
+
+        function setActiveSelection(buttons, activeButton) {
+            if (!buttons || !buttons.forEach) {
+                return;
+            }
+            buttons.forEach(btn => {
+                btn.classList.remove('border-accent');
+                btn.classList.remove('bg-surface-light');
+            });
+            if (activeButton) {
+                activeButton.classList.add('border-accent');
+                activeButton.classList.add('bg-surface-light');
+            }
+        }
+
+        function escapeHtml(value) {
+            return String(value)
+                .replace(/&/g, '&amp;')
+                .replace(/</g, '&lt;')
+                .replace(/>/g, '&gt;')
+                .replace(/"/g, '&quot;')
+                .replace(/'/g, '&#39;');
+        }
+
+        function clearSavedAddressSelection() {
+            if (!savedAddressList) {
+                return;
+            }
+            savedAddressList.querySelectorAll('.saved-address-btn').forEach(btn => {
+                btn.classList.remove('border-accent');
+                btn.classList.remove('bg-surface-light');
+            });
+        }
+
+        function setSavedAddressActive(button) {
+            if (!button) {
+                return;
+            }
+            clearSavedAddressSelection();
+            button.classList.add('border-accent');
+            button.classList.add('bg-surface-light');
+        }
+
+        function renderSavedAddresses() {
+            if (!savedAddressList) {
+                return;
+            }
+
+            savedAddressList.innerHTML = savedAddresses.map((address, index) => {
+                const safeAddress = escapeHtml(address);
+                return `
+                    <button class="saved-address-btn w-full text-left p-4 rounded-lg bg-surface hover:bg-surface-light transition-colors border border-primary-700 hover:border-accent" data-index="${index}">
+                        <div class="flex items-start gap-3">
+                            <svg width="20" height="20" fill="none" stroke="#FF4500" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="flex-shrink-0 mt-0.5">
+                                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                                <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                            </svg>
+                            <div class="flex-1">
+                                <div class="font-body text-sm font-medium mb-1">Saved Address</div>
+                                <div class="font-body text-xs text-text-secondary">${safeAddress}</div>
+                            </div>
+                        </div>
+                    </button>`;
+            }).join('');
+
+            if (noSavedAddresses) {
+                noSavedAddresses.style.display = savedAddresses.length ? 'none' : 'block';
+            }
+        }
+
+        function saveAddresses() {
+            localStorage.setItem('hj_saved_addresses', JSON.stringify(savedAddresses));
+        }
+
+        function selectSavedAddress(address) {
+            if (!address || !savedAddressList) {
+                return;
+            }
+            const index = savedAddresses.findIndex(addr => addr === address);
+            if (index === -1) {
+                return;
+            }
+            const button = savedAddressList.querySelector(`[data-index="${index}"]`);
+            if (button) {
+                setSavedAddressActive(button);
+            }
+        }
+
+        function storeAddress(value) {
+            if (!value) {
+                alert('Please enter your address');
+                if (addressModalInput) {
+                    addressModalInput.focus();
+                }
+                return;
+            }
+
+            const existingIndex = savedAddresses.findIndex(addr => addr.toLowerCase() === value.toLowerCase());
+            if (existingIndex !== -1) {
+                savedAddresses.splice(existingIndex, 1);
+            }
+            savedAddresses.unshift(value);
+            saveAddresses();
+            renderSavedAddresses();
+            selectedAddress = value;
+            if (addressSearch) {
+                addressSearch.value = value;
+            }
+            selectSavedAddress(value);
+            closeAddressModal();
+        }
+
+        function openAddressModal() {
+            if (!addressModal) {
+                return;
+            }
+            if (addressModalInput) {
+                addressModalInput.value = addressSearch ? addressSearch.value.trim() : '';
+                addressModalInput.focus();
+            }
+            if (addressModalStatus) {
+                addressModalStatus.textContent = '';
+            }
+            addressModal.classList.remove('hidden');
+            addressModal.classList.add('flex');
+        }
+
+        function closeAddressModal() {
+            if (!addressModal) {
+                return;
+            }
+            addressModal.classList.add('hidden');
+            addressModal.classList.remove('flex');
+        }
+
+        async function reverseGeocode(lat, lng) {
+            const url = `https://nominatim.openstreetmap.org/reverse?format=json&lat=${lat}&lon=${lng}`;
+            const response = await fetch(url, { headers: { Accept: 'application/json' } });
+            if (!response.ok) {
+                throw new Error('Unable to fetch address');
+            }
+            const data = await response.json();
+            return data.display_name || '';
+        }
+
+        function handleCurrentLocation() {
+            if (!addressModalStatus) {
+                return;
+            }
+            if (!navigator.geolocation) {
+                addressModalStatus.textContent = 'Location is not supported on this device.';
+                return;
+            }
+
+            addressModalStatus.textContent = 'Detecting your location...';
+            navigator.geolocation.getCurrentPosition(async (position) => {
+                const lat = position.coords.latitude;
+                const lng = position.coords.longitude;
+                let resolvedAddress = '';
+
+                try {
+                    resolvedAddress = await reverseGeocode(lat, lng);
+                } catch (error) {
+                    resolvedAddress = '';
+                }
+
+                if (!resolvedAddress) {
+                    resolvedAddress = `${lat.toFixed(6)}, ${lng.toFixed(6)}`;
+                    addressModalStatus.textContent = 'Location detected. Using coordinates; you can edit it.';
+                } else {
+                    addressModalStatus.textContent = 'Location detected.';
+                }
+
+                if (addressModalInput) {
+                    addressModalInput.value = resolvedAddress;
+                }
+            }, () => {
+                addressModalStatus.textContent = 'Unable to get your location. Please enter it manually.';
+            }, { enableHighAccuracy: true, timeout: 10000 });
+        }
+
+        if (savedAddressList) {
+            savedAddressList.addEventListener('click', (event) => {
+                const button = event.target.closest('.saved-address-btn');
+                if (!button) {
+                    return;
+                }
+                const index = Number(button.dataset.index);
+                const addressText = savedAddresses[index];
+                if (addressText) {
+                    if (addressSearch) {
+                        addressSearch.value = addressText;
+                    }
+                    selectedAddress = addressText;
+                }
+                setSavedAddressActive(button);
+            });
+        }
+
+        if (addAddressBtn) {
+            addAddressBtn.addEventListener('click', openAddressModal);
+        }
+
+        if (closeAddressModalBtn) {
+            closeAddressModalBtn.addEventListener('click', closeAddressModal);
+        }
+
+        if (cancelAddressBtn) {
+            cancelAddressBtn.addEventListener('click', closeAddressModal);
+        }
+
+        if (addressModal) {
+            addressModal.addEventListener('click', (event) => {
+                if (event.target === addressModal) {
+                    closeAddressModal();
+                }
+            });
+        }
+
+        if (saveAddressBtn) {
+            saveAddressBtn.addEventListener('click', () => {
+                const value = addressModalInput ? addressModalInput.value.trim() : '';
+                storeAddress(value);
+            });
+        }
+
+        if (useCurrentLocationBtn) {
+            useCurrentLocationBtn.addEventListener('click', handleCurrentLocation);
+        }
+
+        if (addressSearch) {
+            addressSearch.addEventListener('input', () => {
+                selectedAddress = addressSearch.value.trim();
+                if (selectedAddress) {
+                    clearSavedAddressSelection();
+                }
+            });
+        }
+
+        renderSavedAddresses();
+
+        pickupLocationButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const name = btn.querySelector('.font-body.text-sm.font-medium')?.textContent?.trim();
+                const address = btn.querySelector('.font-body.text-xs.text-text-secondary')?.textContent?.trim();
+                selectedPickup = [name, address].filter(Boolean).join(' - ');
+                setActiveSelection(pickupLocationButtons, btn);
+            });
+        });
         deliveryBtn.addEventListener('click', () => {
             deliveryBtn.classList.add('active');
             pickupBtn.classList.remove('active');
@@ -1080,6 +1030,7 @@
             pickupSection.classList.add('hidden');
             deliveryBtn.querySelector('.order-type-indicator').classList.remove('hidden');
             pickupBtn.querySelector('.order-type-indicator').classList.add('hidden');
+            updateCart();
         });
 
         pickupBtn.addEventListener('click', () => {
@@ -1089,6 +1040,7 @@
             deliverySection.classList.add('hidden');
             pickupBtn.querySelector('.order-type-indicator').classList.remove('hidden');
             deliveryBtn.querySelector('.order-type-indicator').classList.add('hidden');
+            updateCart();
         });
 
         // Cart Management
@@ -1106,6 +1058,12 @@
         const cartSubtotal = document.getElementById('cartSubtotal');
         const cartTotal = document.getElementById('cartTotal');
         const deliveryFee = document.getElementById('deliveryFee');
+        const deliveryFeeRow = document.getElementById('deliveryFeeRow');
+        const deliveryFeeLabel = document.getElementById('deliveryFeeLabel');
+
+        function getDeliveryFee() {
+            return deliveryBtn.classList.contains('active') ? 40 : 0;
+        }
 
         function openCart() {
             cartSidebar.classList.remove('translate-x-full');
@@ -1282,12 +1240,75 @@
         // Checkout
         const checkoutBtn = document.getElementById('checkoutBtn');
         checkoutBtn.addEventListener('click', () => {
-            alert('Checkout functionality will be integrated with payment gateway');
+            if (cart.length === 0) {
+                alert('Your cart is empty');
+                return;
+            }
+
+            const orderType = deliveryBtn.classList.contains('active') ? 'Delivery' : 'Pickup';
+            const addressValue = addressSearch ? addressSearch.value.trim() : '';
+            const deliveryAddress = addressValue || selectedAddress || '';
+            const pickupLocation = selectedPickup || 'Not selected';
+
+            if (orderType === 'Delivery' && !deliveryAddress) {
+                alert('Please enter your delivery address');
+                if (addressSearch) {
+                    addressSearch.focus();
+                }
+                return;
+            }
+
+            const subtotal = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+            const deliveryFeeValue = getDeliveryFee();
+            const total = subtotal + deliveryFeeValue;
+
+            const lines = [];
+            lines.push("Order from Hunger's Junktion");
+            lines.push('');
+            lines.push(`Order type: ${orderType}`);
+            if (orderType === 'Delivery') {
+                lines.push(`Address: ${deliveryAddress}`);
+            } else {
+                lines.push(`Pickup: ${pickupLocation}`);
+            }
+            lines.push('');
+            lines.push('Items:');
+            cart.forEach((item, index) => {
+                const itemTotal = item.price * item.quantity;
+                lines.push(`${index + 1}. ${item.name} x${item.quantity} - Rs. ${HJMenu.formatPrice(itemTotal)}`);
+            });
+            lines.push('');
+            lines.push(`Subtotal: Rs. ${HJMenu.formatPrice(subtotal)}`);
+            if (orderType === 'Delivery') {
+                lines.push(`Delivery Fee: Rs. ${HJMenu.formatPrice(deliveryFeeValue)}`);
+            }
+            lines.push(`Total: Rs. ${HJMenu.formatPrice(total)}`);
+            lines.push('');
+            lines.push('Please confirm the order.');
+
+            const whatsappNumber = '919114313419';
+            const message = encodeURIComponent(lines.join('\n'));
+            window.location.href = `https://wa.me/${whatsappNumber}?text=${message}`;
         });
 
         // Initialize
         updateCart();
     </script>
 <!-- <script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script> -->
+
+<a
+  href="https://wa.me/919114313419"
+  class="whatsapp-float"
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="Chat on WhatsApp"
+  title="Chat on WhatsApp"
+>
+  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="currentColor">
+    <path
+      d="M20.52 3.48A11.91 11.91 0 0 0 2 12a11.89 11.89 0 0 0 1.64 6l-1.07 3.91 4-1.05a11.92 11.92 0 0 0 5.71 1.46h.01A11.92 11.92 0 0 0 24 12a11.9 11.9 0 0 0-3.48-8.52zM12 21.03h-.01a9.94 9.94 0 0 1-5.06-1.39l-.36-.21-2.38.62.64-2.32-.23-.38A9.92 9.92 0 0 1 2.97 12 9.94 9.94 0 1 1 12 21.03zm5.46-7.39c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.66.15-.2.3-.76.97-.93 1.17-.17.2-.34.22-.63.07-.3-.15-1.25-.46-2.38-1.48-.88-.78-1.48-1.75-1.65-2.05-.17-.3-.02-.46.13-.61.13-.13.3-.34.45-.5.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.66-1.59-.9-2.18-.24-.58-.48-.5-.66-.5h-.56c-.2 0-.52.07-.79.37-.27.3-1.03 1-1.03 2.45 0 1.45 1.06 2.85 1.21 3.05.15.2 2.08 3.18 5.05 4.46.7.3 1.24.48 1.66.62.71.22 1.35.19 1.86.12.57-.08 1.77-.72 2.02-1.4.25-.68.25-1.27.17-1.4-.08-.13-.27-.2-.57-.35z"
+    />
+  </svg>
+</a>
 </body>
 </html>

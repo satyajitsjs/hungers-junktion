@@ -117,7 +117,7 @@
                     <img src="https://www.hungerjunktion.com/assets/logo.png" alt="" style="width: 40px; height: 60px;">
 
                     <div class="flex flex-col">
-                        <span class="font-headline text-xl font-bold text-gradient-accent">HUNGER'S</span>
+                        <span class="font-headline text-xl font-bold text-gradient-accent">HUNGER</span>
                         <span class="font-cta text-xs tracking-wider text-text-secondary">JUNKTION</span>
                     </div>
                 </a>
@@ -519,15 +519,15 @@
                 <div class="space-y-2">
                     <div class="flex items-center justify-between font-body text-sm">
                         <span class="text-text-secondary">Subtotal</span>
-                        <span id="cartSubtotal">₹0</span>
+                        <span id="cartSubtotal">&#8377;0</span>
                     </div>
-                    <div class="flex items-center justify-between font-body text-sm">
-                        <span class="text-text-secondary">Delivery Fee</span>
-                        <span id="deliveryFee">₹40</span>
+                    <div id="deliveryFeeRow" class="flex items-center justify-between font-body text-sm">
+                        <span id="deliveryFeeLabel" class="text-text-secondary">Delivery Fee</span>
+                        <span id="deliveryFee">&#8377;40</span>
                     </div>
                     <div class="flex items-center justify-between font-headline text-lg font-bold pt-2 border-t border-primary-700">
                         <span>Total</span>
-                        <span id="cartTotal" class="text-accent">₹0</span>
+                        <span id="cartTotal" class="text-accent">&#8377;0</span>
                     </div>
                 </div>
                 <button id="checkoutBtn" class="btn-primary w-full hover-glow">
@@ -579,7 +579,7 @@
                             <circle cx="24" cy="22" r="3" fill="#FF4500"/>
                         </svg>
                         <div class="flex flex-col">
-                            <span class="font-headline text-lg font-bold text-gradient-accent">HUNGER'S</span>
+                            <span class="font-headline text-lg font-bold text-gradient-accent">HUNGER</span>
                             <span class="font-cta text-xs tracking-wider text-text-secondary">JUNKTION</span>
                         </div>
                     </a>
@@ -1100,7 +1100,7 @@
                         <img src="${item.image}" alt="${item.name}" class="w-20 h-20 object-cover rounded-lg" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop'; this.onerror=null;">
                         <div class="flex-1">
                             <h4 class="font-headline text-sm font-bold mb-1">${item.name}</h4>
-                            <p class="font-body text-sm text-accent mb-2">₹${item.price}</p>
+                            <p class="font-body text-sm text-accent mb-2">\u20B9${item.price}</p>
                             <div class="flex items-center gap-3">
                                 <button class="decrease-qty w-8 h-8 rounded-lg bg-surface hover:bg-surface-light flex items-center justify-center transition-colors" data-id="${item.id}">
                                     <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -1157,11 +1157,18 @@
                 });
 
                 const subtotal = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
-                const delivery = 40;
+                const delivery = getDeliveryFee();
                 const total = subtotal + delivery;
 
-                cartSubtotal.textContent = `₹${subtotal}`;
-                cartTotal.textContent = `₹${total}`;
+                if (deliveryFeeRow) {
+                    deliveryFeeRow.classList.toggle('hidden', delivery === 0);
+                }
+                if (deliveryFee) {
+                    deliveryFee.textContent = `\u20B9${delivery}`;
+                }
+
+                cartSubtotal.textContent = `\u20B9${subtotal}`;
+                cartTotal.textContent = `\u20B9${total}`;
             }
         }
 
@@ -1263,7 +1270,7 @@
             const total = subtotal + deliveryFeeValue;
 
             const lines = [];
-            lines.push("Order from Hunger's Junktion");
+            lines.push("Order from Hunger Junktion");
             lines.push('');
             lines.push(`Order type: ${orderType}`);
             if (orderType === 'Delivery') {

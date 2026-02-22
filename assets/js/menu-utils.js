@@ -102,7 +102,7 @@
       }
 
       if (!normalized.alt) {
-        normalized.alt = `${normalized.name} from Hunger's Junktion`;
+        normalized.alt = `${normalized.name} from Hunger Junktion`;
       }
 
       return normalized;
